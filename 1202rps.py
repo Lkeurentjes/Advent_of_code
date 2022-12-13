@@ -1,17 +1,9 @@
-pointdict= {"X":1,"Y":2,"Z":3}
-WindictX= {"A":3,"B":0,"C":6}
-WindictY= {"A":6,"B":3,"C":0}
-WindictZ= {"A":0,"B":6,"C":3}
+pointdict= {'A X':3,'A Y':4,'A Z':8,'B X':1,'B Y':5,'B Z':9,'C X':2,'C Y':6,'C Z':7}
 with open("1202rps.txt") as f:
     lines = f.read().splitlines()
     print(lines)
     points = 0
     for l in lines:
-        points += pointdict[l[2]]
-        if l[2] == "X":
-            points+= WindictX[l[0]]
-        if l[2] == "Y":
-            points+= WindictX[l[0]]
-        if l[2] == "Z":
-            points+= WindictX[l[0]]
+        points += pointdict[l]
+
 print(points)
