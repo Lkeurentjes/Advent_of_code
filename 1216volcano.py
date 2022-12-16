@@ -235,7 +235,7 @@ with open("1216volcano.txt") as f:
     print(tunnelsystem.find_most_points("AA", empties, 0, 30))
     print("empties took ", time.time() - start_time, " to run")
 
-    ### COST 27 MINUTES TO RUN FOR WHOLE INPUT DATA###
+    ### PART 2, COST 27 MINUTES TO RUN FOR WHOLE INPUT DATA###
     # start_time = time.time()
     # print(tunnelsystem.find_most_points_together("AA","AA", empties, 0, 26, 26))
     # print("empties took ", time.time() - start_time, " to run")
