@@ -137,7 +137,7 @@ def maxgeodes(blueprint,minutes):
     return todo(state, oreR, clayR,obsidianR,geodeR)
 
 
-MINUTES = 24
+MINUTES = 32
 with open("202219geodes.txt") as f:
     lines = f.read().splitlines()
     print(lines)
