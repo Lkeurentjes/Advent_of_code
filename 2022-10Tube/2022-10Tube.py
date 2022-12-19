@@ -4,9 +4,7 @@ def check(cycle,X):
     return 0
 
 def add_crt(cycle,X):
-
     cyclerow = cycle% 40
-    print(cyclerow, X)
     if cyclerow in range(X,X+3):
         if cyclerow == 0:
             return "#\n"
@@ -18,7 +16,7 @@ def add_crt(cycle,X):
 
 with open('2022-10Tube.txt') as f:
     lines = f.read().splitlines()
-    print(lines)
+    # print(lines)
 
 transmitter = 0
 cycle = 1
@@ -38,4 +36,4 @@ for line in lines:
     crt += add_crt(cycle, X)
 
 print("Part 1: sum of the signals =",transmitter)
-print("Part 2: CRT look like :\n"+ crt)
+print("Part 2: CRT look like:\n"+ crt)

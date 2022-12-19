@@ -1,15 +1,3 @@
-
-from collections import defaultdict
-
-with open('2022-07Storage.txt') as f:
-    lines = f.read().splitlines()
-    print(lines)
-
-#
-# drivesdict = {"/":[0]}
-# drivessize = 0
-#
-#
 # def recursivesize(sizes):
 #     sumsize = sizes[0]
 #     if sumsize <= 100000:
@@ -21,71 +9,95 @@ with open('2022-07Storage.txt') as f:
 #             return sumsize
 #         else:
 #             return 0
-#
-#
-#
-# with open("1207storage.txt") as f:
-#     lines = f.read().splitlines()
-#     print(lines)
-#     dirnow = None
-#     for line in lines:
-#         line = line.split(" ")
-#         # print(line)
-#         if len(line) == 3:
-#             dirnow = line[2]
-#             continue
-#         if line[0] == "$":
-#             continue
-#         try:
-#             size = int(line[0])
-#         except:
-#             drivesdict[dirnow].append(line[1])
-#             drivesdict[line[1]] = [0]
-#             continue
-#         drivesdict[dirnow][0] += size
-#
-#     print(drivesdict)
-#     for sizes in drivesdict.values():
-#         print(sizes)
-#         print(recursivesize(sizes))
-#         drivessize += recursivesize(sizes)
-#         print(drivessize)
-#
+from collections import deque
 
-with open('1207storage.txt') as f:
-  executions = f.read().strip().split('$ ')
+def size_search(value, drivesdict,SIZE):
+    currentsize = value[0]
 
-tree = {}
-pwd = []
+    if currentsize > SIZE:
+        return 0
 
-for execution in executions[1:]:
-  command, *output = execution.splitlines()
-  program, *args = command.split(' ')
-  if program == 'ls':
-    for line in output:
-      size, name = line.split(' ')
-      if size != 'dir':
-        tree[tuple(pwd) + (name,)] = int(size)
-  else: # program == 'cd'
-    if args[0] == '..':
-      pwd.pop()
-    else:
-      pwd.append(args[0])
+    if len(value[1]) == 0:
+        # print(currentsize)
+        return currentsize
 
-sizes = defaultdict(int)
-for path, size in tree.items():
-  pwd = []
-  for dir in path:
-    sizes[tuple(pwd)] += size
-    pwd.append(dir)
+    queue = deque(value[1])
+    while len(queue):
+        search = queue.popleft()
+        searchdrive = drivesdict[search]
 
-print(sum([size for size in sizes.values() if size <= 100000]))
+        currentsize += searchdrive[0]
+        if currentsize >= SIZE:
+            return 0
 
-total = 70000000
-needed = 30000000
-taken = sizes[()]
+        for tosearch in searchdrive[1]:
+            queue.append(tosearch)
 
-for size in sorted(sizes.values()):
-  if total - (taken - size) >= needed:
-    print(size)
-    break
+
+    # print(currentsize)
+    return currentsize
+
+
+
+
+
+with open('2022-07Storage.txt') as f:
+    lines = f.read().splitlines()
+
+drivesdict = {tuple(["/"]): [0, []]}
+drivessize = 0
+drivelist = []
+dirnow = []
+SIZE = 100000
+
+for line in lines:
+    line = line.split(" ")
+    # print(line)
+
+    if len(line) == 3:
+        if line[2] == "..":
+            dirnow.pop()
+        else:
+            dirnow.append(line[2])
+            drivesdict[tuple(dirnow)] = [0,[]]
+        continue
+
+    if line[0] == "$":
+        continue
+
+    try:
+        size = int(line[0])
+    except:
+        drivelist.append(tuple(dirnow))
+        drivesdict[tuple(dirnow)][1].append(tuple(dirnow)+ (line[1],))
+        drivesdict[tuple(dirnow)+ (line[1],)] = [0, []]
+        continue
+    drivesdict[tuple(dirnow)][0] += size
+
+for drive, value in drivesdict.items():
+    size = size_search(value, drivesdict,SIZE)
+    drivessize += size
+
+print("PART 1: total sum of drivesize of drives smaller then 100000  is", drivessize)
+
+TOTAL = 70000000
+NEEDED = 30000000
+SIZE = TOTAL #not needed anymore
+
+sizes = []
+in_use= 0
+for drive, value in drivesdict.items():
+    size = size_search(value, drivesdict,SIZE)
+    sizes.append((drive,size))
+    if drive == tuple(["/"]):
+        in_use = size
+
+sorted_sizes = sorted(
+    sizes,
+    key=lambda t: t[1],
+    reverse=False
+)
+for size in sorted_sizes:
+    if TOTAL - (in_use - size[1]) >= NEEDED:
+        print("PART 2: the drive to delete is",size[0], "and has size", size[1])
+        break
