@@ -31,11 +31,11 @@ with open("1218lava.txt") as f:
     print("answer Part 1: ", number_of_cubes * 7 - count)
     print("count neighbour took ", time.time() - start_time, " to run")
 
-    start_time = time.time()
-    indexes = kd_tree.query_ball_tree(kd_tree, r=1)
-    count2 = sum([len(i) for i in indexes])
-    print("answer Part 1: ", number_of_cubes * 7 - count2)
-    print("query ball took ", time.time() - start_time, " to run")
+    # start_time = time.time()
+    # indexes = kd_tree.query_ball_tree(kd_tree, r=1)
+    # count2 = sum([len(i) for i in indexes])
+    # print("answer Part 1: ", number_of_cubes * 7 - count2)
+    # print("query ball took ", time.time() - start_time, " to run")
 
     # # visualise point clouds
     # pcd = o3d.geometry.PointCloud()
@@ -87,11 +87,11 @@ with open("1218lava.txt") as f:
     print("answer Part 2: ", number_of_cubes * 7 - count)
     print("count neighbour took ", time.time() - start_time, " to run")
 
-    start_time = time.time()
-    indexes = kd_tree.query_ball_tree(kd_tree, r=1)
-    count2 = sum([len(i) for i in indexes])
-    print("answer Part 2: ", number_of_cubes * 7 - count2)
-    print("query ball took ", time.time() - start_time, " to run")
+    # start_time = time.time()
+    # indexes = kd_tree.query_ball_tree(kd_tree, r=1)
+    # count2 = sum([len(i) for i in indexes])
+    # print("answer Part 2: ", number_of_cubes * 7 - count2)
+    # print("query ball took ", time.time() - start_time, " to run")
 
     # #visualise point clouds
     # pcd = o3d.geometry.PointCloud()
