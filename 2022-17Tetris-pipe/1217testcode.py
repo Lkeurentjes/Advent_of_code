@@ -64,7 +64,7 @@ def solve(jets, total_iters):
     return -min_y
 
 
-with open(path.join(path.dirname(__file__), "1217tetrispype.txt")) as f:
+with open(path.join(path.dirname(__file__), "../1217tetrispype.txt")) as f:
     jets = f.read().strip()
     print("Part 1:", solve(jets, 2022))
     print("Part 1:", solve(jets, 1000000000000))

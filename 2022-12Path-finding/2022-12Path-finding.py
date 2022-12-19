@@ -59,17 +59,19 @@ class Grid:
                 #andself.visited[x][y] >= 0)
 
 
-with open("1212pathfinding.txt") as f:
+with open('2022-12Path-finding.txt') as f:
     lines = f.read().splitlines()
     landscape = Grid(lines)
-    # length = landscape.bfs_path(landscape.start, 1, 0)
-    # print(length)
-    print(landscape.alist)
+    length = landscape.bfs_path(landscape.start, 1, 0)
+    print("PART 1: The shortest route from the start is",length, "steps")
+    # print(landscape.alist)
     minlength = landscape.height*landscape.width
     for a in landscape.alist:
         length = landscape.bfs_path(a, 1, 0)
-        print(length)
+        # print(length)
         if length is not None:
             if length < minlength:
                 minlength = length
-    print(minlength)
+    print("PART 1: The shortest route from an elavation a is",minlength, "steps")
+
+

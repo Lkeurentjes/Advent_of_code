@@ -1,3 +1,7 @@
+with open('2022-08Treehouse.txt') as f:
+    lines = f.read().splitlines()
+    print(lines)
+
 import numpy as np
 
 class Grid:
@@ -114,13 +118,13 @@ class Grid:
 
 
 
-with open("1208trees.txt") as f:
+with open('2022-08Treehouse.txt') as f:
     lines = f.read().splitlines()
     landscape = Grid(lines)
     # landscape.visability()
     landscape.treehouse()
 
-with open('1208trees.txt') as f:
+with open('2022-08Treehouse.txt') as f:
     A = list(f.read().strip().splitlines())
 
 A = [[int(c) for c in line.strip()] for line in A]

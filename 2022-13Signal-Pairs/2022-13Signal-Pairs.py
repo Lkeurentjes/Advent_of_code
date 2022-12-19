@@ -88,7 +88,7 @@
 from json import loads
 from functools import cmp_to_key
 
-with open('1213signal.txt') as f:
+with open('2022-13Signal-Pairs.txt') as f:
   lines = f.read().strip().split('\n\n')
 
 def compare(a, b):
@@ -104,14 +104,14 @@ def compare(a, b):
       return c
   return len(a) - len(b)
 
-# c = 0
-# for i, line in enumerate(lines):
-#   a, b = line.strip().splitlines()
-#   a = loads(a)
-#   b = loads(b)
-#   if compare(a, b) < 0:
-#     c += i + 1
-# print(c)
+c = 0
+for i, line in enumerate(lines):
+  a, b = line.strip().splitlines()
+  a = loads(a)
+  b = loads(b)
+  if compare(a, b) < 0:
+    c += i + 1
+print(c)
 
 l = [[[2]], [[6]]]
 
@@ -124,3 +124,5 @@ l.sort(key=cmp_to_key(compare))
 r = l.index([[2]]) + 1
 s = l.index([[6]]) + 1
 print(r * s)
+
+

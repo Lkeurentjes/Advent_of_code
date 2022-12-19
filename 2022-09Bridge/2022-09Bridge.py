@@ -1,5 +1,4 @@
-import numpy as np
-
+import copy
 
 class Grid:
     def __init__(self, lines):
@@ -36,9 +35,13 @@ class Grid:
                 row.append(".")
             self.visited.append(row)
         self.visited[self.start[0]][self.start[1]] = "#"
-        self.printgrid()
+        self.visited9 = copy.deepcopy(self.visited)
+
 
         self.head = self.start
+        self.tail = self.start
+
+        self.head9 = self.start
         self.t1 = self.start
         self.t2 = self.start
         self.t3 = self.start
@@ -47,7 +50,8 @@ class Grid:
         self.t6 = self.start
         self.t7 = self.start
         self.t8 = self.start
-        self.tail = self.start
+        self.tail9 = self.start
+
 
 
     def printgrid(self):
@@ -57,54 +61,41 @@ class Grid:
 
     def walk(self):
         for step in self.steps:
-            print(step)
+            # print(step)
             if step[0] == "U":
                 for i in range(step[1]):
                     self.head = (self.head[0] - 1, self.head[1])
-                    self.t1 = self.movetail(self.head, self.t1)
-                    self.t2 = self.movetail(self.t1, self.t2)
-                    self.t3 = self.movetail(self.t2, self.t3)
-                    self.t4 = self.movetail(self.t3, self.t4)
-                    self.t5 = self.movetail(self.t4, self.t5)
-                    self.t6 = self.movetail(self.t5, self.t6)
-                    self.t7 = self.movetail(self.t6, self.t7)
-                    self.t8 = self.movetail(self.t7, self.t8)
-                    self.tail = self.movetail(self.t8, self.tail)
+                    self.tail = self.movetail(self.head, self.tail)
                     self.visited[self.tail[0]][self.tail[1]] = "#"
                     # self.printgrid()
             if step[0] == "D":
                 for i in range(step[1]):
 
                     self.head = (self.head[0] + 1, self.head[1])
-                    self.t1 = self.movetail(self.head, self.t1)
-                    self.t2 = self.movetail(self.t1, self.t2)
-                    self.t3 = self.movetail(self.t2, self.t3)
-                    self.t4 = self.movetail(self.t3, self.t4)
-                    self.t5 = self.movetail(self.t4, self.t5)
-                    self.t6 = self.movetail(self.t5, self.t6)
-                    self.t7 = self.movetail(self.t6, self.t7)
-                    self.t8 = self.movetail(self.t7, self.t8)
-                    self.tail = self.movetail(self.t8, self.tail)
+                    self.tail = self.movetail(self.head, self.tail)
                     self.visited[self.tail[0]][self.tail[1]] = "#"
                     # self.printgrid()
             if step[0] == "L":
                 for i in range(step[1]):
                     self.head = (self.head[0], self.head[1] - 1)
-                    self.t1 = self.movetail(self.head, self.t1)
-                    self.t2 = self.movetail(self.t1, self.t2)
-                    self.t3 = self.movetail(self.t2, self.t3)
-                    self.t4 = self.movetail(self.t3, self.t4)
-                    self.t5 = self.movetail(self.t4, self.t5)
-                    self.t6 = self.movetail(self.t5, self.t6)
-                    self.t7 = self.movetail(self.t6, self.t7)
-                    self.t8 = self.movetail(self.t7, self.t8)
-                    self.tail = self.movetail(self.t8, self.tail)
+                    self.tail = self.movetail(self.head, self.tail)
                     self.visited[self.tail[0]][self.tail[1]] = "#"
                     # self.printgrid()
             if step[0] == "R":
                 for i in range(step[1]):
                     self.head = (self.head[0], self.head[1] + 1)
-                    self.t1 = self.movetail(self.head, self.t1)
+                    self.tail = self.movetail(self.head, self.tail)
+                    self.visited[self.tail[0]][self.tail[1]] = "#"
+                    # self.printgrid()
+
+
+    def walk9(self):
+        for step in self.steps:
+            # print(step)
+            if step[0] == "U":
+                for i in range(step[1]):
+                    self.head9 = (self.head9[0] - 1, self.head9[1])
+                    self.t1 = self.movetail(self.head9, self.t1)
                     self.t2 = self.movetail(self.t1, self.t2)
                     self.t3 = self.movetail(self.t2, self.t3)
                     self.t4 = self.movetail(self.t3, self.t4)
@@ -112,8 +103,50 @@ class Grid:
                     self.t6 = self.movetail(self.t5, self.t6)
                     self.t7 = self.movetail(self.t6, self.t7)
                     self.t8 = self.movetail(self.t7, self.t8)
-                    self.tail = self.movetail(self.t8, self.tail)
-                    self.visited[self.tail[0]][self.tail[1]] = "#"
+                    self.tail9 = self.movetail(self.t8, self.tail9)
+                    self.visited9[self.tail9[0]][self.tail9[1]] = "#"
+                    # self.printgrid()
+            if step[0] == "D":
+                for i in range(step[1]):
+                    self.head9 = (self.head9[0] + 1, self.head9[1])
+                    self.t1 = self.movetail(self.head9, self.t1)
+                    self.t2 = self.movetail(self.t1, self.t2)
+                    self.t3 = self.movetail(self.t2, self.t3)
+                    self.t4 = self.movetail(self.t3, self.t4)
+                    self.t5 = self.movetail(self.t4, self.t5)
+                    self.t6 = self.movetail(self.t5, self.t6)
+                    self.t7 = self.movetail(self.t6, self.t7)
+                    self.t8 = self.movetail(self.t7, self.t8)
+                    self.tail9 = self.movetail(self.t8, self.tail9)
+                    self.visited9[self.tail9[0]][self.tail9[1]] = "#"
+                    # self.printgrid()
+            if step[0] == "L":
+                for i in range(step[1]):
+                    self.head9 = (self.head9[0], self.head9[1] - 1)
+                    self.t1 = self.movetail(self.head9, self.t1)
+                    self.t2 = self.movetail(self.t1, self.t2)
+                    self.t3 = self.movetail(self.t2, self.t3)
+                    self.t4 = self.movetail(self.t3, self.t4)
+                    self.t5 = self.movetail(self.t4, self.t5)
+                    self.t6 = self.movetail(self.t5, self.t6)
+                    self.t7 = self.movetail(self.t6, self.t7)
+                    self.t8 = self.movetail(self.t7, self.t8)
+                    self.tail9 = self.movetail(self.t8, self.tail9)
+                    self.visited9[self.tail9[0]][self.tail9[1]] = "#"
+                    # self.printgrid()
+            if step[0] == "R":
+                for i in range(step[1]):
+                    self.head9 = (self.head9[0], self.head9[1] + 1)
+                    self.t1 = self.movetail(self.head9, self.t1)
+                    self.t2 = self.movetail(self.t1, self.t2)
+                    self.t3 = self.movetail(self.t2, self.t3)
+                    self.t4 = self.movetail(self.t3, self.t4)
+                    self.t5 = self.movetail(self.t4, self.t5)
+                    self.t6 = self.movetail(self.t5, self.t6)
+                    self.t7 = self.movetail(self.t6, self.t7)
+                    self.t8 = self.movetail(self.t7, self.t8)
+                    self.tail9 = self.movetail(self.t8, self.tail9)
+                    self.visited9[self.tail9[0]][self.tail9[1]] = "#"
                     # self.printgrid()
 
     def movetail(self, head, tail):
@@ -151,20 +184,29 @@ class Grid:
                 else:
                     tail = (tail[0] + 1, tail[1] - 1)
 
-        print(abs(head[0] - tail[0]) > 1 or abs(head[1] - tail[1]) > 1, "\t head", head,
-              "tail", tail)
+        # print(abs(head[0] - tail[0]) > 1 or abs(head[1] - tail[1]) > 1, "\t head", head,
+        #       "tail", tail)
         return tail
 
 
 
-with open("1209bridge.txt") as f:
+with open('2022-09Bridge.txt') as f:
     lines = f.read().splitlines()
+    # print(lines)
     bridge = Grid(lines)
+
     bridge.walk()
-    bridge.printgrid()
     counter = 0
     for row in bridge.visited:
         for place in row:
             if place == "#":
                 counter += 1
-    print(counter)
+    print("Part 1: ",counter, "positions are visited")
+
+    bridge.walk9()
+    counter2 = 0
+    for row in bridge.visited9:
+        for place in row:
+            if place == "#":
+                counter2 += 1
+    print("Part 2: ",counter2, "positions are visited")

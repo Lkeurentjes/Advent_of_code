@@ -1,10 +1,12 @@
 import os
 
 YEAR = "2022"
-DATE = "01"
-NAME = "Calories"
+DATE = "19"
+NAME = "Geodes"
 
-combinationname = YEAR + DATE + NAME
+combinationname = YEAR + "-" + DATE + NAME
+
+
 os.mkdir(combinationname)
 with open(combinationname+ "/"+ combinationname +".txt", "a") as ftxt:
     pass

@@ -26,10 +26,10 @@ class Graph:
         self.distancegraph = copy.deepcopy(self.m_adj_list)
         self.add_distance()
 
-        self.print_adj_list()
-        print("\n")
-        self.print_dist_list()
-        print("\n")
+        # self.print_adj_list()
+        # print("\n")
+        # self.print_dist_list()
+        # print("\n")
 
         self.empty = []
         self.bestscore = 0
@@ -211,8 +211,9 @@ class Graph:
         return best
 
 start_time = time.time()
-with open("1216volcano.txt") as f:
+with open('2022-16Volcano.txt') as f:
     lines = f.read().splitlines()
+    # print(lines)
     allnodes = []
     edges = []
     weigth = {}
@@ -232,8 +233,8 @@ with open("1216volcano.txt") as f:
     ### PART 1 ###
     tunnelsystem = Graph(len(lines), True, allnodes, edges, weigth)
     start_time = time.time()
-    print(tunnelsystem.find_most_points("AA", empties, 0, 30))
-    print("empties took ", time.time() - start_time, " to run")
+    print("Part 1: Releases:" ,tunnelsystem.find_most_points("AA", empties, 0, 30))
+    print("part 1 took ", time.time() - start_time, " seconds to run")
 
     ### PART 2, COST 27 MINUTES TO RUN FOR WHOLE INPUT DATA###
     # start_time = time.time()
@@ -255,10 +256,7 @@ for me, ollie in split_valves(tosearch):
     score = tunnelsystem.find_most_points_subgraph("AA", empties, 0, 26, me) + tunnelsystem.find_most_points_subgraph("AA", empties, 0, 26, ollie)
     if score > best:
         best = score
-print(best)
-print("empties took ", time.time() - start_time, " to run")
-
-
-
+print("Part 2: releases",best)
+print("Part 2 took ", time.time() - start_time, " seconds to run")
 
 

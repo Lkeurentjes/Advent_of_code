@@ -137,8 +137,8 @@ def maxgeodes(blueprint,minutes):
     return todo(state, oreR, clayR,obsidianR,geodeR)
 
 
-MINUTES = 32
-with open("202219geodes.txt") as f:
+MINUTES = 24
+with open('2022-19Geodes.txt') as f:
     lines = f.read().splitlines()
     print(lines)
     blueprintdict = {}
@@ -159,3 +159,4 @@ with open("202219geodes.txt") as f:
     for index, score in blueprintdict.items():
         totalscore += index*score
     print("PART 1 ANSWER IS: ", totalscore)
+

@@ -1,3 +1,10 @@
+
+from collections import defaultdict
+
+with open('2022-07Storage.txt') as f:
+    lines = f.read().splitlines()
+    print(lines)
+
 #
 # drivesdict = {"/":[0]}
 # drivessize = 0
@@ -44,8 +51,6 @@
 #         drivessize += recursivesize(sizes)
 #         print(drivessize)
 #
-
-from collections import defaultdict
 
 with open('1207storage.txt') as f:
   executions = f.read().strip().split('$ ')

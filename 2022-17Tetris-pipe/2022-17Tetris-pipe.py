@@ -221,7 +221,7 @@ class Grid:
 
 
 
-with open("1217tetrispype.txt") as f:
+with open('2022-17Tetris-pipe.txt') as f:
     line = f.read()
     Pipe = Grid(line)
     number_of_Rocks = 10
@@ -229,3 +229,4 @@ with open("1217tetrispype.txt") as f:
     Pipe.fallingdown(number_of_Rocks)
     Pipe.printpipebackwards()
     print("height = ",Pipe.height-4)
+

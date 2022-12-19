@@ -112,13 +112,8 @@ class Grid:
         print("\n\n\n\n\nI SHOULD NOT BE HEEEEERE\n\n\n\n\n")
         return (10000,10000)
 
-
-
-
-
-
-
-with open("1214sand.txt") as f:
+with open('2022-14Sand.txt') as f:
     lines = f.read().splitlines()
     landscape = Grid(lines)
     print(landscape.sandflow())
+

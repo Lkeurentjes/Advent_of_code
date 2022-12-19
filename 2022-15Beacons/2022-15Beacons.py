@@ -14,7 +14,7 @@ minX = 10000000000000000
 def ManhattenDistance(v1, v2):
     return abs(v1[0]-v2[0]) + abs(v1[1] - v2[1])
 
-with open("1215sensor.txt") as f:
+with open('2022-15Beacons.txt') as f:
     lines = f.read().splitlines()
     for i in range(len(lines)):
         line = lines[i].replace(",","").replace(":","").split(" ")
@@ -287,3 +287,4 @@ part2()
 # s.check()
 # model = s.model()
 # print(model[x].as_long() * 4000000 + model[y].as_long())
+

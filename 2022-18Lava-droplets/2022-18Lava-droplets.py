@@ -1,11 +1,10 @@
-
 import numpy as np
 from scipy.spatial import KDTree
 import copy
 import time
 import open3d as o3d
 
-with open("1218lava.txt") as f:
+with open('2022-18Lava-droplets.txt') as f:
     lines = f.read().splitlines()
     number_of_cubes = len(lines)
 
