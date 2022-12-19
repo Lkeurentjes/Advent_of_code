@@ -1,6 +1,6 @@
 with open("1201calories.txt") as f:
     lines = f.read().splitlines()
-    # print(lines)
+    print(lines)
     mostcalories = 0
     calorielist = []
     elfcalorie = 0
