@@ -1,8 +1,8 @@
 import os
 
 YEAR = "2022"
-DATE = "19"
-NAME = "Geodes"
+DATE = "20"
+NAME = "Encrypted"
 
 combinationname = YEAR + "-" + DATE + NAME
 
