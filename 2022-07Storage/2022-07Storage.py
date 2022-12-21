@@ -1,14 +1,3 @@
-# def recursivesize(sizes):
-#     sumsize = sizes[0]
-#     if sumsize <= 100000:
-#         return sumsize
-#     else:
-#         for i in range(1,len(sizes)):
-#             sumsize += recursivesize(drivesdict[sizes[i]])
-#         if sumsize <= 100000:
-#             return sumsize
-#         else:
-#             return 0
 from collections import deque
 
 def size_search(value, drivesdict,SIZE):

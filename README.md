@@ -1,5 +1,5 @@
-# Advent of code
- Advent of code solutions in python, using various algorithms.
+# Advent of code 2022
+ Advent of code 2022 solutions in python, using various algorithms.
 
 ## Todo's
 - 14, optimize part 2
