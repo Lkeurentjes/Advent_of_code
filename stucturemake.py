@@ -1,8 +1,8 @@
 import os
 
 YEAR = "2022"
-DATE = "21"
-NAME = "Monkey Math"
+DATE = "22"
+NAME = "Monkey_Map"
 
 combinationname = YEAR + "-" + DATE + NAME
 
