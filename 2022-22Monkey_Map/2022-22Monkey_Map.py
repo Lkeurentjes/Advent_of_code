@@ -14,6 +14,7 @@ class Grid:
 
         #part2
         self.cubemap = np.zeros((self.height, self.width))
+        self.minifold = None
 
         print(self.map)
         print(self.position)
@@ -116,6 +117,7 @@ class Grid:
     def makecube(self,SQUARE):
         h_cube = self.height//SQUARE
         w_cube = self.width//SQUARE
+        self.minifold = np.zeros((h_cube,w_cube))
         counter = 1
         # print(h_cube,w_cube)
         for h in range(h_cube):
@@ -128,11 +130,13 @@ class Grid:
                 for i in range(x,x+4):
                     for j in range(y, y+4):
                         self.cubemap[(i,j)] = counter
+                        self.minifold[h,w] = counter
                 counter +=1
 
 
                 # print(x,y)
         print(self.cubemap)
+        print(self.minifold)
 
 class Cube:
     def __init__(self, landscape,size):
@@ -140,8 +144,11 @@ class Cube:
         self.size = size
         self.landscape.makecube(size)
 
-        self.faceslist = []
+        self.facesdict = {}
         self.makefaces()
+        self.setorientation()
+        # for face in self.facesdict.values():
+        #     face.printface()
 
     def makefaces(self):
         for i in range(1,7):
@@ -151,10 +158,35 @@ class Cube:
             for j in range(len(locationsf)):
                 grid[locationsf[j]] = self.landscape.map[locationsi[j]]
             face = Face(i, grid,locationsi[0])
-            self.faceslist.append(face)
+            self.facesdict[i] = face
 
     def setorientation(self):
-        pass
+        fold = self.landscape.minifold
+
+        for check in range(1,7):
+            for other in range(1,7):
+                if check == other:
+                    continue
+                if check < other:
+                    continue
+                xcheck = np.where(fold == check)[0]
+                ycheck = np.where(fold == check)[1]
+                xother = np.where(fold == other)[0]
+                yother = np.where(fold == other)[1]
+
+                if xcheck == xother:
+                    if ycheck-yother == 1:
+                        self.facesdict[check].upNeigbour = other
+                        self.facesdict[check].uprotation = 0
+                        self.facesdict[other].downNeigbour = check
+                        self.facesdict[other].uprotation = 0
+
+                if ycheck == yother:
+                    continue
+
+
+
+
 
 
 
@@ -175,6 +207,16 @@ class Face:
 
         self.downNeigbour = None
         self.downrotation = None
+
+        self.back = None
+
+
+    def printface(self):
+        print("im face", self.id,
+              "\n\t my neigbour left is", self.leftNeigbour, "and is oriented", self.leftrotation,
+              "\n\t my neigbour right is", self.rightNeigbour, "and is oriented", self.rightrotation,
+              "\n\t my neigbour up is", self.upNeigbour, "and is oriented", self.uprotation,
+              "\n\t my neigbour down is", self.downNeigbour, "and is oriented", self.downrotation)
 
 
 facepoints= {"R":0,"D":1,"L":2,"U":3}
