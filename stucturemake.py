@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2021"
-DATE = "04"
-NAME = "Giant-Squid"
+DATE = "05"
+NAME = "Hydrothermal-Venture"
 
 
 combinationname = YEAR + "-" + DATE + NAME
