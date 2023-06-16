@@ -5,6 +5,7 @@ YEAR = "2021"
 DATE = "04"
 NAME = "Giant-Squid"
 
+
 combinationname = YEAR + "-" + DATE + NAME
 
 
