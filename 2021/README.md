@@ -15,8 +15,10 @@
 - day 5 - Hydrothermal Venture
   - For Part 1 you need to find density of vents in a grid (considering only horizontal and vertical), this is done by making a np zeros matrix as grid and project the vents onto the grid by making the grid value +=1. The "too dense" points are the calculated with the np where function.
   - For Part 2 you need to find density of vents in a grid (also considering the diagonal vents), this is done by making a np zeros matrix as grid and project the vents onto the grid by making the grid value +=1. The "too dense" points are the calculated with the np where function.
+- day 6 - Lanternfish
+  - For part 1 you need to fins out how big the school is after 80 days, this is done by using a dictionary which counts the fish for each times, then it loops over the days and sets als counts on the timer -1 and add for the 0 fish babys (on timer 8) and resets them by adding them to timer 6.
+  - For part 2 you need to fins out how big the school is after 265 days, this is done the same as part one only for more days.
 
-  - 
 
 ## Todo's
 
