@@ -20,4 +20,4 @@ for i in range(1,len(lines)-2):
         counter2 +=1
     number = sum
 
-print("PART 1: mesurments increased",counter2,"times")
+print("PART 2: mesurments increased",counter2,"times")

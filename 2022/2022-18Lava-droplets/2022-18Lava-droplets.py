@@ -2,7 +2,6 @@ import numpy as np
 from scipy.spatial import KDTree
 import copy
 import time
-import open3d as o3d
 
 with open('2022-18Lava-droplets.txt') as f:
     lines = f.read().splitlines()

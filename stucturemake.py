@@ -1,9 +1,9 @@
 import os
 
 
-YEAR = "2021"
-DATE = "08"
-NAME = "Segment-Search"
+YEAR = "2023"
+DATE = "01"
+NAME = "test"
 
 
 combinationname = YEAR + "-" + DATE + NAME
