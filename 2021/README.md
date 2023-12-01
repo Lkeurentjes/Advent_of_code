@@ -18,7 +18,12 @@
 - day 6 - Lanternfish
   - For part 1 you need to fins out how big the school is after 80 days, this is done by using a dictionary which counts the fish for each times, then it loops over the days and sets als counts on the timer -1 and add for the 0 fish babys (on timer 8) and resets them by adding them to timer 6.
   - For part 2 you need to fins out how big the school is after 265 days, this is done the same as part one only for more days.
-
+- day 7 - Whales
+  - For part 1, you need to calculate the best horizontal alligment and the fuel spend for that
+  - For part 2 you need to do the samen, but the fuel spend is not a sum but a partial sum
+- day 8 - Segment search
+  - For part 1, you need to decipher screen digits, in part 1 you only need to do 1,4,7,8
+  - For part 2 you need to desipher all screen digits
 
 ## Todo's
 
