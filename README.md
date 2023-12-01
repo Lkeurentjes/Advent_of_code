@@ -41,3 +41,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 6 - Lanternfish](2021/2021-06Lanternfish)
 - [day 7 - Whales](2021/2021-07Whales)
 - [day 8 - Segment search](2021/2021-08Segment-Search)
+- [day 9 - lava tube](2021/2021-09-Lava-tube)

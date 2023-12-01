@@ -24,6 +24,9 @@
 - day 8 - Segment search
   - For part 1, you need to decipher screen digits, in part 1 you only need to do 1,4,7,8
   - For part 2 you need to desipher all screen digits
+- day 9 - lava tube
+  - For part 1 you need to find the lowest points and make the sum fo their risks
+  - For part 2 you need to get the basins around the lowest point and get the multplication or the size of the largest three
 
 ## Todo's
 
