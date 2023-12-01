@@ -43,3 +43,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 8 - Segment search](2021/2021-08Segment-Search)
 - [day 9 - lava tube](2021/2021-09-Lava-tube)
 - [day 10 - Syntax Scoring](2021/2021-10-Syntax-scoring)
+- [day 11 - dumbo octopusses](2021/2021-11-Dumbo-Octopus)

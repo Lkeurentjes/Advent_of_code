@@ -30,6 +30,9 @@
 - day 10 - Syntax scoring
   - for part 1 you need to discard all the incomplete sentences and get the score of the wrong closing parentheses
   - for part 2 you need to discard all the wrong sentences and fill all the incomplete and calculate their score
+- day 11 - Dumbo octopuses
+  - for part 1, octopuses flash when they have a value of 10, and when flashing give their neighbour one point up. Count the number of flashes for 100 steps
+  - for part 2, we need to find out when al flashes at the same time, so the algorithm is the same as before, but instead being a range the steps go till all flash at the same time.
 
 ## Todo's
 
