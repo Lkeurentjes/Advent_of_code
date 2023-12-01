@@ -3,10 +3,10 @@ import os
 
 YEAR = "2023"
 DATE = "01"
-NAME = "test"
+NAME = "Calibration"
 
 
-combinationname = YEAR + "-" + DATE + NAME
+combinationname = YEAR + "-" + DATE + "-" + NAME
 
 
 os.mkdir(YEAR + "/"+ combinationname)
