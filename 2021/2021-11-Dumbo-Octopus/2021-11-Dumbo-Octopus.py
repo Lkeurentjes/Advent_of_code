@@ -33,7 +33,6 @@ class Grid:
                     if self.grid[indexesX[ind] + x][indexesY[ind] + y] == 10:
                         indexesX.append(indexesX[ind] + x)
                         indexesY.append(indexesY[ind] + y)
-
             ind += 1
 
     def flash_count(self):

@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2023"
-DATE = "01"
-NAME = "Calibration"
+DATE = "02"
+NAME = "color-cubes"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME

@@ -7,6 +7,7 @@ In the Readme of every year there is some explenation of what is done and if the
 The codes are now always in python, seeing that was my best language when I started advent of code.
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)
+- [day 2 - color cubes](2023/2023-01-Calibration)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
