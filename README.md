@@ -7,7 +7,7 @@ In the Readme of every year there is some explenation of what is done and if the
 The codes are now always in python, seeing that was my best language when I started advent of code.
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)
-- [day 2 - color cubes](2023/2023-01-Calibration)
+- [day 2 - Color cubes](2023/2023-01-Calibration)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
@@ -45,3 +45,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 9 - lava tube](2021/2021-09-Lava-tube)
 - [day 10 - Syntax Scoring](2021/2021-10-Syntax-scoring)
 - [day 11 - dumbo octopusses](2021/2021-11-Dumbo-Octopus)
+- [day 12 - Cave Graph](2021/2021-12-cave-graph)

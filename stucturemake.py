@@ -1,9 +1,9 @@
 import os
 
 
-YEAR = "2023"
-DATE = "02"
-NAME = "color-cubes"
+YEAR = "2021"
+DATE = "12"
+NAME = "cave-graph"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME

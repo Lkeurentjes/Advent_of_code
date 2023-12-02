@@ -31,8 +31,11 @@
   - for part 1 you need to discard all the incomplete sentences and get the score of the wrong closing parentheses
   - for part 2 you need to discard all the wrong sentences and fill all the incomplete and calculate their score
 - day 11 - Dumbo octopuses
-  - for part 1, octopuses flash when they have a value of 10, and when flashing give their neighbour one point up. Count the number of flashes for 100 steps
-  - for part 2, we need to find out when al flashes at the same time, so the algorithm is the same as before, but instead being a range the steps go till all flash at the same time.
+  - for part 1 you need to count the number of flashes for 100 steps, octopuses flash when they have a value of 10, and when flashing give their neighbour one point up.
+  - for part 2 you need to find out when all octopuses flash at the same time, so the algorithm is the same as before, but instead being a range the steps go till all flash at the same time.
+- day 12 - Cave Graph
+  - For part 1 you need to find all possible routes while finishing small caves only ones
+  - For part 2 you need to find all possible routes but one of the small caves can be visited twice
 
 ## Todo's
 
