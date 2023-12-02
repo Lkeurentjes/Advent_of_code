@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2021"
-DATE = "12"
-NAME = "cave-graph"
+DATE = "13"
+NAME = "Origami"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME
