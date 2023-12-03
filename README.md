@@ -33,6 +33,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 20 - Encrypted](2022/2022-20Encrypted)
 - [day 21 - Monkey Math](2022/2022-21Monkey%20Math)
 - [day 22 - Monkey Map](2022/2022-22Monkey_Map) - Only part 1 finished
+- [day 23 - Plant the starfruit](2022/2022-23-plant-Starfruit)
 
 ### 2021
 - [day 1 - Sonar Sweep](2021/2021-01Sonar-Sweep)
