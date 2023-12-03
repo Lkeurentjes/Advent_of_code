@@ -48,4 +48,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 11 - dumbo octopusses](2021/2021-11-Dumbo-Octopus)
 - [day 12 - Cave Graph](2021/2021-12-cave-graph)
 - [day 13 - Origami](2021/2021-13-Origami)
-- [day 14 - Origami](2021/2021-14-Polymerization)
+- [day 14 - Polymerization](2021/2021-14-Polymerization)
