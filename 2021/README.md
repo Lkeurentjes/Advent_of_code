@@ -42,6 +42,9 @@
 - day 14 - Polymerization
   - For part 1 you need to calculate how many times each character is in a growing polymer of 10 steps
   - For part 2 you need to do 40 steps which makes it an optimalization problem
+- day 15 - Chiton
+  - For part 1 you need to find the least risk route throuh a cave(matrix), dijkstra is used.
+  - For part 2 you need to make the matrix 5 times bigger for both sizes and use the same algorithm as 1
 
 ## Todo's
 
