@@ -1,9 +1,9 @@
 import os
 
 
-YEAR = "2023"
-DATE = "03"
-NAME = "Gear-Ratios"
+YEAR = "2021"
+DATE = "14"
+NAME = "Polymerization"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME

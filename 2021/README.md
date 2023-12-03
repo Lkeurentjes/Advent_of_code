@@ -39,6 +39,9 @@
 - day 13 - Origami
   - For part 1 you need to fold a transparent paper (or matrix) one time and count the dots
   - For part 2 you need to do all the folds and count the remaining
+- day 14 - Polymerization
+  - For part 1 you need to calculate how many times each character is in a growing polymer of 10 steps
+  - For part 2 you need to do 40 steps which makes it an optimalization problem
 
 ## Todo's
 
