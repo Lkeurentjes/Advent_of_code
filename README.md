@@ -34,6 +34,8 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 21 - Monkey Math](2022/2022-21Monkey%20Math)
 - [day 22 - Monkey Map](2022/2022-22Monkey_Map) - Only part 1 finished
 - [day 23 - Plant the starfruit](2022/2022-23-plant-Starfruit)
+- [day 24 - Blizard Basin](2022/2022-24-Blizard-Basin)
+- [day 25 - Hot air baloon](2022/2022-25Hot_airbaloon) - Only part 1 done
 
 ### 2021
 - [day 1 - Sonar Sweep](2021/2021-01Sonar-Sweep)

@@ -12,11 +12,16 @@
 - day 23 - Plant the starfruit
   - For part 1 all elves need to move using the given considerations per elf, in the end you need to calculate the empty ground in the boundingbox of the elves
   - For Part 2 you need to find after which round the elves are spread out enough, seeing they dont move anymore
+- day 24 - Blizard Basin
+  - For part 1 you need to fins the fastest route to the end, while not getting hit or moving into a blizzard
+  - For part 2 you need to do the same but find the fastest route for going to the end, back to the start, back to the end.
+- day 25 - Hot air balloon
+  - For Part 1 You need to translate a list from SNAFU sum those and give your answer translated back from SNAFU
 
 ## Todo's
 - 14, optimize part 2
 - 15, optimize part 2
 - 17, doesn't work
 - 22 part 2
-- 24, 25 as a whole
+- 25
 
