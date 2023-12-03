@@ -8,6 +8,7 @@ The codes are now always in python, seeing that was my best language when I star
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)
 - [day 2 - Color cubes](2023/2023-01-Calibration)
+- [day 3 - Gear Ratios](2023/2023-03-Gear-Ratios)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
@@ -46,3 +47,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 10 - Syntax Scoring](2021/2021-10-Syntax-scoring)
 - [day 11 - dumbo octopusses](2021/2021-11-Dumbo-Octopus)
 - [day 12 - Cave Graph](2021/2021-12-cave-graph)
+- [day 13 - Origami](2021/2021-13-Origami)

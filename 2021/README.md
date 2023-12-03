@@ -36,6 +36,9 @@
 - day 12 - Cave Graph
   - For part 1 you need to find all possible routes while finishing small caves only ones
   - For part 2 you need to find all possible routes but one of the small caves can be visited twice
+- day 13 - Origami
+  - For part 1 you need to fold a transparent paper (or matrix) one time and count the dots
+  - For part 2 you need to do all the folds and count the remaining
 
 ## Todo's
 
