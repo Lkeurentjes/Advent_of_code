@@ -9,6 +9,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 1 - Calibration](2023/2023-01-Calibration)
 - [day 2 - Color cubes](2023/2023-01-Calibration)
 - [day 3 - Gear Ratios](2023/2023-03-Gear-Ratios)
+- [day 4 - Scratch cards](2023/2023-04-Scratch-cards)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
