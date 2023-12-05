@@ -1,9 +1,9 @@
 import os
 
 
-YEAR = "2022"
-DATE = "22"
-NAME = "Monkeymap example"
+YEAR = "2023"
+DATE = "05"
+NAME = "Food-production-problem"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME

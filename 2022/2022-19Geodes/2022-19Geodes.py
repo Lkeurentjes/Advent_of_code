@@ -52,6 +52,7 @@ def todo(state, oreR, clayR, obsidianR, geodeR):
             continue
 
         seen.add(tuple(currentstate))
+        seen.add(tuple(currentstate))
         # check buy options
         # state = (ore,clay,obsidian,geode,oreRobot,ClayRobot,ObsidianRobot,GeodeRobot,minutes)
         if currentstate[0] >= geodeR[0] and currentstate[2] >= geodeR[1]:

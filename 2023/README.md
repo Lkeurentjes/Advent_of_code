@@ -15,6 +15,9 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 4 - Scratch cards
   - For part 1 you need to calculate all point won of a collection of scratch cards
   - For part 2 you need to calculate how many cards you end up with after winning
+- day 5 - Food production problem
+  - For part 1 you need to find the lowest number after you applied a bunch of translation based on ranges
+  - For part 2 the seeds are not single seeds, but (in pairs) ranges of numbers, which makes it an optimalisation problem. Instead of looping over the billions of seeds, I now split the ranges into (smaller) translated ranges and get the smallest range as smallest
 
 
 ## Todo's
