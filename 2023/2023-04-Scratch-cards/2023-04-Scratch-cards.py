@@ -5,7 +5,7 @@ with open('2023-04-Scratch-cards.txt') as f:
 points = 0
 # cc = Counter(dict.fromkeys(range(1, len(lines) + 1),1))
 cc = Counter(range(1, len(lines) + 1))
-print(cc)
+# print(cc)
 for i,l in enumerate(lines):
     card, values_str = l.split(": ")
     values = [set(map(int, v.split())) for v in values_str.replace("  ", " ").split(" | ")]

@@ -1,6 +1,3 @@
-import numpy as np
-
-
 def replace(seed, ranges):
     for new, old, length in ranges:
         if old <= seed < old + length:
