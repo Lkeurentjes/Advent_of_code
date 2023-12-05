@@ -45,7 +45,10 @@
 - day 15 - Chiton
   - For part 1 you need to find the least risk route throuh a cave(matrix), dijkstra is used.
   - For part 2 you need to make the matrix 5 times bigger for both sizes and use the same algorithm as 1
+- day 17 - Trick shot
+  - For part 1 you need to find the aim to reach the highest Y, while landing in the range
+  - For part 2 you need to find all aims working to land in the range
 
 ## Todo's
-
+- day 17 --> is there a way to get rid of the hardcoded 1000
 
