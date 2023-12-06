@@ -43,11 +43,15 @@
   - For part 1 you need to calculate how many times each character is in a growing polymer of 10 steps
   - For part 2 you need to do 40 steps which makes it an optimalization problem
 - day 15 - Chiton
-  - For part 1 you need to find the least risk route throuh a cave(matrix), dijkstra is used.
+  - For part 1 you need to find the least risk route through a cave(matrix), dijkstra is used.
   - For part 2 you need to make the matrix 5 times bigger for both sizes and use the same algorithm as 1
+- day 16 - DecaHex decoder
+  - For part 1 you need to translate all chars in hex to 4 digit binary and the get all sum of all the versions
+  - For part 2 you need to get the value after using all the set conditions, which makes a massive recursive loop
 - day 17 - Trick shot
   - For part 1 you need to find the aim to reach the highest Y, while landing in the range
   - For part 2 you need to find all aims working to land in the range
+- 
 
 ## Todo's
 - day 17 --> is there a way to get rid of the hardcoded 1000

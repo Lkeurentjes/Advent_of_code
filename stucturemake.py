@@ -1,9 +1,9 @@
 import os
 
 
-YEAR = "2023"
-DATE = "06"
-NAME = "Boat-Race"
+YEAR = "2021"
+DATE = "16"
+NAME = "Hexa-decoder"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME
