@@ -18,6 +18,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 5 - Food production problem
   - For part 1 you need to find the lowest number after you applied a bunch of translation based on ranges
   - For part 2 the seeds are not single seeds, but (in pairs) ranges of numbers, which makes it an optimalisation problem. Instead of looping over the billions of seeds, I now split the ranges into (smaller) translated ranges and get the smallest range as smallest
-
+- day 6 - Boat race
+  - For part 1 you need to get the multiplication of all the possibilities to win
+  - For part 2 you need to get the possibilities of one large race
 
 ## Todo's

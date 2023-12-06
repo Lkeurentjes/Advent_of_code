@@ -11,6 +11,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 3 - Gear Ratios](2023/2023-03-Gear-Ratios)
 - [day 4 - Scratch cards](2023/2023-04-Scratch-cards)
 - [day 5 - Food production problem](2023/2023-05-Food-production-problem)
+- [day 6 - Boat Race](2023/2023-06-Boat-Race)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
@@ -37,7 +38,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 22 - Monkey Map](2022/2022-22Monkey_Map) - Only part 1 finished
 - [day 23 - Plant the starfruit](2022/2022-23-plant-Starfruit)
 - [day 24 - Blizard Basin](2022/2022-24-Blizard-Basin)
-- [day 25 - Hot air baloon](2022/2022-25Hot_airbaloon) - Only part 1 done
+- [day 25 - Hot air baloon](2022/2022-25Hot_airbaloon)
 
 ### 2021
 - [day 1 - Sonar Sweep](2021/2021-01Sonar-Sweep)
