@@ -59,3 +59,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 15 - Chiton](2021/2021-15-Chiton)
 - [day 16 - Hexa decoder](2021/2021-16-Hexa-decoder)
 - [day 17 - Trick shot](2021/2021-17-Trick-shot)
+- [day 18 - Snailfish math](2021/2021-18-Snailfish-math)

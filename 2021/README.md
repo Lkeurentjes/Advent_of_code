@@ -51,7 +51,9 @@
 - day 17 - Trick shot
   - For part 1 you need to find the aim to reach the highest Y, while landing in the range
   - For part 2 you need to find all aims working to land in the range
-- 
+- day 18 - Snailfish math
+  - For part 1 you need to calculate an addition the snailfish way and get the magnitude of the answer
+  - For part 2 you need to find the highest number of any combination
 
 ## Todo's
 - day 17 --> is there a way to get rid of the hardcoded 1000
