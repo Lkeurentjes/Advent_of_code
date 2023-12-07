@@ -12,6 +12,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 4 - Scratch cards](2023/2023-04-Scratch-cards)
 - [day 5 - Food production problem](2023/2023-05-Food-production-problem)
 - [day 6 - Boat Race](2023/2023-06-Boat-Race)
+- [day 7 - Camel poker](2023/2023-07-Camel-Poker)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)

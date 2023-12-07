@@ -21,5 +21,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 6 - Boat race
   - For part 1 you need to get the multiplication of all the possibilities to win
   - For part 2 you need to get the possibilities of one large race
+- For day 7 - Camel Poker
+  - For part 1 you need to sort your cards upon poker score, and then the total score is the place of the card * the bide
+  - For part 2 you need to do the same, but J are now Jokers, which can be any card, so you need to find the best replacement for the joker.
 
 ## Todo's
