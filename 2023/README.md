@@ -21,8 +21,11 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 6 - Boat race
   - For part 1 you need to get the multiplication of all the possibilities to win
   - For part 2 you need to get the possibilities of one large race
-- For day 7 - Camel Poker
+- day 7 - Camel Poker
   - For part 1 you need to sort your cards upon poker score, and then the total score is the place of the card * the bide
   - For part 2 you need to do the same, but J are now Jokers, which can be any card, so you need to find the best replacement for the joker.
+- day 8 - Dessert graph
+  - For part 1 you need to find how long the route is from AAA to ZZZ, while following directions
+  - For part 2 you need to find how many steps you need to take before all nodes ending on "A" are ending on "Z" at the same time, least common multiple is used, to optimize
 
 ## Todo's
