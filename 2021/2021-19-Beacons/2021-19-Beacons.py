@@ -9,18 +9,20 @@ class Graph3D:
         self.distances = {}
         for n in nodes:
             self.add_node(n)
+
     def add_node(self, node):
         self.length += 1
         self.nodes.append(node)
         self.distances[self.length] = []
 
         def calculate_distance(node1, node2):
-            return round(math.sqrt(sum((x - y) ** 2 for x, y in zip(node1, node2))),0)
+            # return math.sqrt(sum((x - y) ** 2 for x, y in zip(node1, node2)))
+            return sum((x - y) ** 2 for x, y in zip(node1, node2))
 
         for key in self.distances:
             if key == self.length:
                 break
-            dist = calculate_distance(node,self.nodes[key])
+            dist = calculate_distance(node, self.nodes[key])
             self.distances[self.length].append((key, dist))
             self.distances[key].append((self.length, dist))
 
@@ -28,10 +30,9 @@ class Graph3D:
         print("Nodes:", self.nodes)
         print("Distances:", self.distances)
 
-    def get_rotation(self,other,same):
-        print("ROTATION",same)
-        source_points = [self.nodes[x[0]] for x in same]
-        target_points = [other.nodes[x[1]] for x in same]
+    def get_rotation(self, other, same):
+        target_points = [self.nodes[x[0]] for x in same]
+        source_points = [other.nodes[x[1]] for x in same]
 
         # Step 1: Center the Point Clouds
         centroid_source = np.mean(source_points, axis=0)
@@ -60,28 +61,37 @@ class Graph3D:
         return rotation_matrix, translation_vector
 
     def compare_isomorphic(self, other):
-        print("\n")
-        self.printgraph()
-        other.printgraph()
-
         same = []
-        for i in range(self.length+1):
-            for j in range(other.length+1):
-                connections_zero_self = set([x[1] for x in self.distances[i]])
-                connections_zero_other = set([x[1] for x in other.distances[j]])
-                if len(connections_zero_self.intersection(connections_zero_other)) >= 11:
-                    same.append((i,j))
-        print(same)
+        for i in range(self.length + 1):
+            for j in range(other.length + 1):
+                connections_self = set([x[1] for x in self.distances[i]])
+                connections_other = set([x[1] for x in other.distances[j]])
+                if len(connections_self.intersection(connections_other)) >= 11:
+                    # print("\n")
+                    # print(connections_self)
+                    # print(connections_other)
+                    # print(connections_self.intersection(connections_other))
+                    same.append((i, j))
+
         if len(same) < 12:
-            return True
-
+            return False
+        print(same)
         rotation, translation = self.get_rotation(other, same[:3])
-        print(rotation)
-        print(translation)
 
-        #0 1 3 4 5 6 7 9 12 14 19 24
+        same_other = [x[1] for x in same]
+
+        for i, node in enumerate(other.nodes):
+            if not i in same_other:
+                new = np.dot(rotation, np.array([node[0], node[1], node[2]]))
+                new = new + translation
+                self.add_node((self.proper_round(new[0]), self.proper_round(new[1]), self.proper_round(new[2])))
         return True
 
+    def proper_round(self,num, dec=0):
+        num = str(num)[:str(num).index('.')+dec+2]
+        if num[-1]>='5':
+            return int(float(num[:-2-(not dec)]+str(int(num[-2-(not dec)])+1)))
+        return int(float(num[:-1]))
 
 
 with open('2021-19-Beacons.txt') as f:
@@ -90,10 +100,17 @@ with open('2021-19-Beacons.txt') as f:
     beacon_graphs = [Graph3D(nodes) for nodes in scanners]
     print(scanners)
 
-start_graph = beacon_graphs.pop(0)
-while len(beacon_graphs) != 0:
-    for i, graph in enumerate(beacon_graphs):
-        good = start_graph.compare_isomorphic(graph)
-        if good:
-            beacon_graphs.pop(i)
-            break
+def compare(beacon_graphs):
+    for i, graphI in enumerate(beacon_graphs):
+        for j, graphJ in enumerate(beacon_graphs[i+1::]):
+            good = graphJ.compare_isomorphic(graphI)
+            if good:
+                beacon_graphs.pop(i)
+                return beacon_graphs
+    return beacon_graphs
+
+while len(beacon_graphs) != 1:
+    beacon_graphs = compare(beacon_graphs)
+    print(len(beacon_graphs))
+
+print(beacon_graphs[0].length + 1)

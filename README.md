@@ -1,7 +1,7 @@
 # My advent of code repository
-Not always the cleanest code, not always finsihed whole years and/or assigments.
-Currently, Advent of Code 2023 is happening, but in the meantime I sometimes do older assigments.
-In the Readme of every year there is some explenation of what is done and if there are still todo's.
+Not always the cleanest code, not always finished whole years and/or assignments.
+Currently, Advent of Code 2023 is happening, but in the meantime I sometimes do older assignments.
+In the Readme of every year there is some explanation of what is done and if there are still todo's.
 
 ## The codes
 The codes are now always in python, seeing that was my best language when I started advent of code.
