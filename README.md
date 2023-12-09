@@ -14,6 +14,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 6 - Boat Race](2023/2023-06-Boat-Race)
 - [day 7 - Camel poker](2023/2023-07-Camel-Poker)
 - [day 8 - Dessert graph](2023/2023-08-Dessert-graph)
+- [day 9 - Mirage Maintenance](2023/2023-09-Mirage-Maintenance)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)

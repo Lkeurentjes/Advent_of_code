@@ -27,5 +27,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 8 - Dessert graph
   - For part 1 you need to find how long the route is from AAA to ZZZ, while following directions
   - For part 2 you need to find how many steps you need to take before all nodes ending on "A" are ending on "Z" at the same time, least common multiple is used, to optimize
+- day 9 - Miriage maintenance
+  - For part 1 you need to calculate the next number before the sequence, with the use of a "piramid"
+  - For part 2 you need to calculate the number that came before the sequence the same way
 
 ## Todo's
