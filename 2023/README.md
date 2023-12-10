@@ -30,5 +30,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 9 - Miriage maintenance
   - For part 1 you need to calculate the next number before the sequence, with the use of a "piramid"
   - For part 2 you need to calculate the number that came before the sequence the same way
+- day 10 - pipe maze
+  - For part 1, you need to calculate the farthest point from the startepoint while following the pipe
+  - For part 2, you need to find how much of squares the pipe encloses
 
 ## Todo's
