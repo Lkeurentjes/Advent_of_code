@@ -16,6 +16,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 8 - Dessert graph](2023/2023-08-Dessert-graph)
 - [day 9 - Mirage Maintenance](2023/2023-09-Mirage-Maintenance)
 - [day 10 - pipe maze](2023/2023-10-Pipe-Maze)
+- [day 11 - Cosmic expension](2023/2023-11-Cosmic-expansion)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
