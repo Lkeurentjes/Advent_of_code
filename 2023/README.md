@@ -36,5 +36,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 11 - Cosmic expansion
   - For part 1 we get a universe, where all  rows or columns without stars need to get 2 times as big and then the shortest part between all stars needs to be summed
   - For part 2 we need to do the same, but multiply the empties bij 1000000
+- day 12 - Hot springs
+  - For part 1 you need to calculate the possible arrangement options for the groups in a string with known ("." or "#") an unknown places ("?")
+  - For part 2 you need to do the same but the arrangement (+"?") and the groups get 5 times their size. Added cache to optimize the code
 
 ## Todo's
