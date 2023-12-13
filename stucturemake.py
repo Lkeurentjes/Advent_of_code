@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2023"
-DATE = "12"
-NAME = "Hot-Springs"
+DATE = "13"
+NAME = "Point-of-Incidence"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME
