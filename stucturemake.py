@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2023"
-DATE = "13"
-NAME = "Point-of-Incidence"
+DATE = "14"
+NAME = "Reflector-Dish"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME

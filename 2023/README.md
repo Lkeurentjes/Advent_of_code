@@ -40,7 +40,10 @@ Advent of code 2023 solutions in python, using various algorithms.
   - For part 1 you need to calculate the possible arrangement options for the groups in a string with known ("." or "#") an unknown places ("?")
   - For part 2 you need to do the same but the arrangement (+"?") and the groups get 5 times their size. Added cache to optimize the code
 - day 13 - Point of Incidence
-  - For part 1 you need to fins, where you can fold the map Horizontally or vertically
-  - For part 2 you need to fins another fold where at you at most need to change 1 tile
+  - For part 1 you need to find, where you can fold the map Horizontally or vertically
+  - For part 2 you need to find another fold where at you at most need to change 1 tile
+- day 14 - Reflector dish
+  - For part 1 you need to roll all moving stones to the north and calculate the load
+  - For part 2 you need to run a number of cycles, where your roll stones N, W, S, E in each cycle. Seeing the total number is very high I search for the cycle length and use that to find teh load
 
 ## Todo's
