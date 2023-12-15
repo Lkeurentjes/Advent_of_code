@@ -45,5 +45,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 14 - Reflector dish
   - For part 1 you need to roll all moving stones to the north and calculate the load
   - For part 2 you need to run a number of cycles, where your roll stones N, W, S, E in each cycle. Seeing the total number is very high I search for the cycle length and use that to find teh load
+- day 15 - Lens Library
+  - For part 1 you need to calculate the sum of all the HASH values
+  - For part 2 you needto put all the lenses in the right boxes based on the HASH value before the = and remove them if there is an -, and calculate the power in the end
 
 ## Todo's
