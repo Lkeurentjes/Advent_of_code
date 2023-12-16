@@ -48,5 +48,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 15 - Lens Library
   - For part 1 you need to calculate the sum of all the HASH values
   - For part 2 you needto put all the lenses in the right boxes based on the HASH value before the = and remove them if there is an -, and calculate the power in the end
+- day 16 - The floor will be lava
+  - For part 1 you need to calculate how many floor tiles will be lava based on where the beam has been
+  - For part 2 you need to calculate what is the best position for the beam to get the most lava tiles
 
 ## Todo's
