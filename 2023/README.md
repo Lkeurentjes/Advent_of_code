@@ -51,5 +51,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 16 - The floor will be lava
   - For part 1 you need to calculate how many floor tiles will be lava based on where the beam has been
   - For part 2 you need to calculate what is the best position for the beam to get the most lava tiles
+- day 17 - Clumsy Crucible
+  - For part 1 you need to find the cheapest path though a matrix, keeping in mind you can only go 3 steps in the same direction, dijkstra is used
+  - For part 2 you need to do the same, but take at least 4 and maximal 10 steps in the same direction, dijkstra is used
 
 ## Todo's

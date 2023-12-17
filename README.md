@@ -22,6 +22,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 14 - Reflector dish](2023/2023-14-Reflector-Dish)
 - [day 15 - Lens library](2023/2023-15-Lens-Library)
 - [day 16 - The floor will be lava](2023/2023-16-Floor-is-lava)
+- [day 17 - Clumsy Crucible](2023/2023-17-Clumsy-Crucible)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)
