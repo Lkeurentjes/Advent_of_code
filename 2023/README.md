@@ -54,5 +54,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 17 - Clumsy Crucible
   - For part 1 you need to find the cheapest path though a matrix, keeping in mind you can only go 3 steps in the same direction, dijkstra is used
   - For part 2 you need to do the same, but take at least 4 and maximal 10 steps in the same direction, dijkstra is used
+- day 18 - Lavaduct lagoon
+  - For part 1 you need to get all the squares inside the border, a matrix is used
+  - For part 2 you need to do the same thing, but the number get so high that matrix cant be used, so use shoelace formula
 
 ## Todo's
