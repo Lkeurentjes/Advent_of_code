@@ -57,5 +57,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 18 - Lavaduct lagoon
   - For part 1 you need to get all the squares inside the border, a matrix is used
   - For part 2 you need to do the same thing, but the number get so high that matrix cant be used, so use shoelace formula
+- day 19 - Aplenty
+  - For part 1 you need to get which products are accepted, which i've done by rewriting the sentences into lambda's
+  - For part 2 sadly the lambda's where to advanced so I wrote the whole code recursively for ranges.
 
 ## Todo's
