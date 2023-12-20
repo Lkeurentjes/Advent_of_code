@@ -25,6 +25,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 17 - Clumsy Crucible](2023/2023-17-Clumsy-Crucible)
 - [day 18 - Lavaduct lagoon](2023/2023-18-Lavaduct-Lagoon)
 - [day 19 - Aplenty](2023/2023-19-Aplenty)
+- [day 20 - Pulse propagation](2023/2023-20-Pulse-Propagation)
 
 ### 2022
 - [day 1 - Calories](2022/2022-01Calories)

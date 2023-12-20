@@ -60,5 +60,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 19 - Aplenty
   - For part 1 you need to get which products are accepted, which i've done by rewriting the sentences into lambda's
   - For part 2 sadly the lambda's where to advanced so I wrote the whole code recursively for ranges.
+- day 20 - Pulse propagation
+  - for part 1 you need to find how many high and low signals are given after 1000 button pushes
+  - for part 2 you need to find the specific low value for one node, so I search for the cycle of nodes it depends on and take the LCM of those
 
 ## Todo's
