@@ -63,5 +63,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 20 - Pulse propagation
   - for part 1 you need to find how many high and low signals are given after 1000 button pushes
   - for part 2 you need to find the specific low value for one node, so I search for the cycle of nodes it depends on and take the LCM of those
+- day 21 - step counter
+  - for part 1 you need to find where you can come, I use the chessbord way combined with bfs
+  - for part 2 you need to go over a very large grid and do the same. Maybe later optimize
 
 ## Todo's

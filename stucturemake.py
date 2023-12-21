@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2023"
-DATE = "20"
-NAME = "Pulse-Propagation"
+DATE = "21"
+NAME = "step-counter"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME
