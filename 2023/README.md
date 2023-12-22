@@ -66,5 +66,9 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 21 - step counter
   - for part 1 you need to find where you can come, I use the chessbord way combined with bfs
   - for part 2 you need to go over a very large grid and do the same. Maybe later optimize
+- day 22 - Sand slab
+  - for part 1 we needed to find which blocks we could delete without other blocks falling down
+  - for part 2 we needed to find for each block how many would fall down and sum those values
 
 ## Todo's
+- optimize day 21 part 2 to something usefull
