@@ -69,6 +69,9 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 22 - Sand slab
   - for part 1 we needed to find which blocks we could delete without other blocks falling down
   - for part 2 we needed to find for each block how many would fall down and sum those values
+- day 23 - Long walk
+  - For part 1 we need to find the longest path, while we cannot walk up slopes
+  - For part 2 we need to find the longest path, while you can walk up slopes, so many more possabilities excist
 
 ## Todo's
-- optimize day 21 part 2 to something usefull
+- optimize day 23 part 2 to something usefull

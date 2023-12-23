@@ -9,7 +9,7 @@ from functools import cache, cached_property
 from queue import PriorityQueue
 import heapq
 
-type Vector = tuple[int, ...]
+# type Vector = tuple[int, ...]
 from collections import deque
 from collections.abc import Iterable
 from itertools import starmap
@@ -176,6 +176,6 @@ print("Part 1, 64 steps can reach this number of plots: ", Garden.walk(64))
 start_time = time.time()
 print("Part 2, 26501365 steps can reach this number of plots: ", Garden._math_fromula_pt2(26501365))
 # Sadly still to long for such an big number
-# print("Part 2, x steps can reach this number of plots: ", Garden.infinite_walk(26501365))
+print("Part 2, x steps can reach this number of plots: ", Garden.infinite_walk(5000))
 print("--- %s seconds ---" % (time.time() - start_time))
 
