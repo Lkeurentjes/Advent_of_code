@@ -72,6 +72,8 @@ Advent of code 2023 solutions in python, using various algorithms.
 - day 23 - Long walk
   - For part 1 we need to find the longest path, while we cannot walk up slopes
   - For part 2 we need to find the longest path, while you can walk up slopes, so many more possabilities excist
+- day 25 - Snowoverload
+  - For Part 1 we need to find the two subgraphs in a big graph network when you cut three edges
 
 ## Todo's
 - optimize day 23 part 2 to something usefull
