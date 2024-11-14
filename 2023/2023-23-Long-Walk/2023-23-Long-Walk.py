@@ -22,7 +22,6 @@ class Grid:
         self.nodes = set()
         self.edges = defaultdict(list)
         self.build_graph()
-        print(self.graph)
 
     def printgrid(self):
         print("garden")
@@ -75,9 +74,6 @@ class Grid:
                             if neighbour != '#':  # Add valid neighbors
                                 self.graph[(x, y)].append((nx, ny))
 
-        # Debugging for start and finish nodes
-        print(f"Start node connections: {self.graph[self.start]}")
-        print(f"Finish node connections: {self.graph[self.finish]}")
         self.find_vertices_start_end()
         self.find_edges()
 

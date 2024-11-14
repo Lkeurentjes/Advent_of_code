@@ -28,7 +28,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 20 - Pulse propagation](2023/2023-20-Pulse-Propagation)
 - [day 21 - step counter](2023/2023-21-step-counter)
 - [day 22 - Sand slab](2023/2023-22-sand-slab)
-- [day 23 - Long walk](2023/2023-23-Long-Walk) - Part 2 is really realy slow
+- [day 23 - Long walk](2023/2023-23-Long-Walk)
 - [day 24- Never Tell Me The Odds](2023/2023-24-Never-tell-me-the-odds) 
 - [day 25 - Snowverload](2023/2023-25-Snowverload)
 
