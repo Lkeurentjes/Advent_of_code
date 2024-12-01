@@ -3,8 +3,11 @@ Not always the cleanest code, not always finished whole years and/or assignments
 Currently, Advent of Code 2023 is happening, but in the meantime I sometimes do older assignments.
 In the Readme of every year there is some explanation of what is done and if there are still todo's.
 
-## The codes
+## The solutions
 The codes are now always in python, seeing that was my best language when I started advent of code.
+### 2024
+- [day 1 - Historian hysteria](2024/2024-01-Historian-Hysteria)
+
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)
 - [day 2 - Color cubes](2023/2023-01-Calibration)
