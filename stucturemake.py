@@ -1,12 +1,12 @@
 import os
 
 
-YEAR = "2024"
-DATE = "02"
-NAME = "Red-Nosed-Reports"
+YEAR = "2021"
+DATE = "20"
+NAME = "Trench map"
 
 
-combinationname = YEAR + "-" + DATE + "-" + NAME
+combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")
 
 
 os.mkdir(YEAR + "/"+ combinationname)

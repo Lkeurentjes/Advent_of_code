@@ -83,3 +83,4 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 17 - Trick shot](2021/2021-17-Trick-shot)
 - [day 18 - Snailfish math](2021/2021-18-Snailfish-math)
 - [day 19 - Beacons](2021/2021-19-Beacons)
+- [day 20 - Trench map](2021/2021-20-Trench_map)

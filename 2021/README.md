@@ -57,6 +57,9 @@
 - day 19 - Beacons
   - For part 1 you need to calculate how many beacons overlap, this is done by rotating the graph
   - For part 2 you need to find the largets manhatten distance between two scanners
+- day 20 - Trench map
+  - For part 1 you need enhance the image by getting a bit value, trick why the infinite does not work, it cause it changes value, with puzzle input
+  - For part 2 you need to do the enhancing 50 times instead of 2 
 
 ## Todo's
 - day 17 --> is there a way to get rid of the hardcoded 1000
