@@ -54,6 +54,9 @@
 - day 18 - Snailfish math
   - For part 1 you need to calculate an addition the snailfish way and get the magnitude of the answer
   - For part 2 you need to find the highest number of any combination
+- day 19 - Beacons
+  - For part 1 you need to calculate how many beacons overlap, this is done by rotating the graph
+  - For part 2 you need to find the largets manhatten distance between two scanners
 
 ## Todo's
 - day 17 --> is there a way to get rid of the hardcoded 1000
