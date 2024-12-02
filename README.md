@@ -1,6 +1,6 @@
 # My advent of code repository
 Not always the cleanest code, not always finished whole years and/or assignments.
-Currently, Advent of Code 2023 is happening, but in the meantime I sometimes do older assignments.
+Currently, Advent of Code 2024 is happening, but in the meantime I sometimes do older assignments.
 In the Readme of every year there is some explanation of what is done and if there are still todo's.
 
 ## The solutions
