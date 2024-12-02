@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2021"
-DATE = "20"
-NAME = "Trench map"
+DATE = "21"
+NAME = "Dirac Dice"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")

@@ -60,6 +60,9 @@
 - day 20 - Trench map
   - For part 1 you need enhance the image by getting a bit value, trick why the infinite does not work, it cause it changes value, with puzzle input
   - For part 2 you need to do the enhancing 50 times instead of 2 
+- day 21 - Dirac dice
+  - For part 1 play direc dice and score points with a deterministic dice
+  - For part 2 play direc dice in many universes, so use a recursive add for wins
 
 ## Todo's
 - day 17 --> is there a way to get rid of the hardcoded 1000
