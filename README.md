@@ -8,6 +8,7 @@ The codes are now always in python, seeing that was my best language when I star
 ### 2024
 - [day 1 - Historian hysteria](2024/2024-01-Historian-Hysteria)
 - [day 2 - Red nosed reports](2024/2024-02-Red-Nosed-Reports)
+- [day 3 - Mull it over](2024/2024-03-Mull_It_Over)
 
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)

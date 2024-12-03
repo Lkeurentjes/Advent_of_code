@@ -9,3 +9,6 @@ Advent of code 2024 solutions in python, using various algorithms.
 - day 2 - Red nosed reports
     - For part 1, step size in list are checked on size and sign
     - For part 2, the list are also checked with one removed
+- day 3 - Mull it over
+    - For part 1, use a regex pattern to find all multiplications
+    - For part 2, only do the multiplications when do() is before and not when don't() is before
