@@ -12,3 +12,6 @@ Advent of code 2024 solutions in python, using various algorithms.
 - day 3 - Mull it over
     - For part 1, use a regex pattern to find all multiplications
     - For part 2, only do the multiplications when do() is before and not when don't() is before
+- day 4 - Ceres search
+    - For part 1, do word search puzzle of grid to find xmas
+    - For part 2, instead of finding to word we need to find the x_mas pattern in grid
