@@ -15,3 +15,6 @@ Advent of code 2024 solutions in python, using various algorithms.
 - day 4 - Ceres search
     - For part 1, do word search puzzle of grid to find xmas
     - For part 2, instead of finding to word we need to find the x_mas pattern in grid
+- day 5 - Print queue
+    - For part 1, check if indexes order matches with rule and sum middle of the list
+    - For part 2, reorder incorrect lists with help of a queue and a "directed" graph and sum the middle elements
