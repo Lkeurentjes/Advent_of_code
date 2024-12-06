@@ -16,30 +16,26 @@ def find_middle_page(update):
 
 def order_rules(rules):
     directed_graph = defaultdict(list) # graph with all the rules
-    connection_counter = defaultdict(int) # number of connected edges per part of "node"
     nodes = set() # set of all the nodes
 
     # add the nodes to the graph and connection counter
     for a, b in rules:
-        directed_graph[a].append(b)
-        connection_counter[b] += 1
+        directed_graph[b].append(a)
         nodes.update([a, b])
 
-    # add the node with none connections also to connection counter
-    for node in nodes:
-        connection_counter.setdefault(node, 0)
-
     # start with no connection rules
-    queue = deque([node for node in nodes if connection_counter[node] == 0])
+    queue = deque([node for node in nodes if node not in directed_graph])
+
     ordered_list = []
     while queue:
         current = queue.popleft()
+        if current in directed_graph:
+            directed_graph.pop(current)
         ordered_list.append(current)
 
-        for neighbor in directed_graph[current]:
-            # work up by dismissing the nodes which are already in the list
-            connection_counter[neighbor] -= 1
-            if connection_counter[neighbor] == 0:
+        for neighbor in directed_graph:
+            directed_graph[neighbor].remove(current)
+            if len(directed_graph[neighbor]) == 0:
                 queue.append(neighbor)
 
     return ordered_list
