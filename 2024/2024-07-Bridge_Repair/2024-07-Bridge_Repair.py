@@ -1,72 +1,40 @@
-def do_math_sum(result, currentSum, numbers, part1=True):
-    # check sum this step
+from functools import lru_cache
+import math
+
+@lru_cache
+def recursive_evaluator(result, current, numbers, part1=True):
+    # check result
     if len(numbers) == 0:
-        return result == currentSum
+        return result == current
 
-    else:
-        currentSum += numbers[0]
+    # early false
+    if current > result:
+        return False
 
-        # early return
-        if currentSum > result:
-            return False
+    # Precompute digits for mathematical concatenation instead of int(str(current) + str(numbers[0]))
+    digits = math.ceil(math.log10(numbers[0] + 1)) if numbers[0] > 0 and not part1 else 1
 
-        # test all possible other math characters
-        return (
-                do_math_sum(result, currentSum, numbers[1:], part1) or
-                do_math_multiply(result, currentSum, numbers[1:], part1) or
-                (not part1 and
-                 do_concatenation(result, currentSum, numbers[1:]))
-        )
-
-
-def do_math_multiply(result,multiplication,numbers, part1=True):
-    if len(numbers) == 0:
-        return multiplication == result
-
-    else:
-        multiplication *= numbers[0]
-
-        # early return
-        if multiplication > result:
-            return False
-
-        # test all possible other math characters
-        return (
-                do_math_sum(result,multiplication, numbers[1:], part1) or
-                do_math_multiply(result, multiplication, numbers[1:], part1) or
-                (not part1 and
-                do_concatenation(result, multiplication, numbers[1:]))
-        )
-
-def do_concatenation(result, concatenation, numbers):
-    if len(numbers) == 0:
-        return concatenation == result
-    else:
-        concatenated_value = int(str(concatenation) + str(numbers[0]))
-
-        #early return
-        if concatenated_value > result:
-            return False
-
-        # test all possible other math characters
-        return (
-            do_math_sum(result, concatenated_value, numbers[1:], False) or
-            do_math_multiply(result, concatenated_value, numbers[1:], False) or
-            do_concatenation(result, concatenated_value, numbers[1:])
-        )
+    return (recursive_evaluator(result, current + numbers[0], numbers[1:], part1) or  # summation
+            recursive_evaluator(result, current * numbers[0], numbers[1:], part1) or  # multiplication
+            (not part1 and recursive_evaluator(result, current * (10 ** digits) + numbers[0], numbers[1:], part1)))  # concatenation
 
 
 with open('2024-07-Bridge_Repair.txt') as f:
     lines = f.read().splitlines()
-    calibration = [(int(x.split(': ')[0]), list(map(int, x.split(': ')[1].split()))) for x in lines]
+    calibration = [(int(x.split(': ')[0]), tuple(map(int, x.split(': ')[1].split()))) for x in lines]
+
     total = 0
     for res, numbers in calibration:
-        if do_math_sum(res,0, numbers) or do_math_multiply(res,1, numbers):
+        if recursive_evaluator(res, numbers[0], numbers[1:]):
             total += res
     print("part 1, evaluated result is", total)
 
     total = 0
     for res, numbers in calibration:
-        if do_math_sum(res, 0, numbers, False) or do_math_multiply(res, 1, numbers, False) or do_concatenation(res, 0, numbers):
+        if recursive_evaluator(res, numbers[0], numbers[1:], False):
             total += res
     print("part 2, evaluated result is", total)
+
+
+
+
