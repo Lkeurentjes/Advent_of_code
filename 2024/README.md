@@ -18,10 +18,12 @@ Advent of code 2024 solutions in python, using various algorithms.
 - day 5 - Print queue
     - For part 1, check if indexes order matches with rule and sum middle of the list
     - For part 2, reorder incorrect lists with help of a queue and a "directed" graph and sum the middle elements
-- day 5 - Print queue
+- day 6 - Print queue
     - For part 1, Walk over grid and count visited cells
     - For part 2, Look for possible obstacles to make infinite loops
-
+- day 7 - Bridge repair
+    - For part 1, check if result can be achieved by sum or multiplications and take sum of total
+    - For part 2, add concatenation as option to make true and take sum of total
 
 # todo
 - part 2 day 6 is sort of brute force, just checking all the cells part 1 has visited

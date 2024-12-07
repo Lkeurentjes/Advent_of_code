@@ -12,6 +12,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 4 - Ceres search](2024/2024-04-Ceres_Search)
 - [day 5 - Print queue](2024/2024-05-Print_Queue)
 - [day 6 - Guard galilivant](2024/2024-06-Guard_Gallivant)
+- [day 7 - Bridge repair](2024/2024-07-Bridge_Repair)
 
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)
