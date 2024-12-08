@@ -1,4 +1,5 @@
 # Advent of Code 2024
+
 Advent of code 2024 solutions in python, using various algorithms.
 
 ## Kind of problems versus used algorithms
@@ -24,6 +25,10 @@ Advent of code 2024 solutions in python, using various algorithms.
 - day 7 - Bridge repair
     - For part 1, check if result can be achieved by sum or multiplications and take sum of total
     - For part 2, add concatenation as option to make true and take sum of total
+- day 8 - Resonant collinearity
+    - For part 1, the number of unique antinodes based on the resonant frequencies of the antennas in grid needs to be found
+    - For part 2, the number of unique antinodes based on effects of resonant harmonics needs to be found
 
 # todo
+
 - part 2 day 6 is sort of brute force, just checking all the cells part 1 has visited
