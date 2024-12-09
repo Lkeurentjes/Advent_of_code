@@ -14,6 +14,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 6 - Guard galilivant](2024/2024-06-Guard_Gallivant)
 - [day 7 - Bridge repair](2024/2024-07-Bridge_Repair)
 - [day 8 - Resonant collinearity](2024/2024-08-Resonant_Collinearity)
+- [day 9 - Disk fragmenter](2024/2024-09-Disk_Fragmenter)
 
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)

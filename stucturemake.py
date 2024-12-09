@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2024"
-DATE = "08"
-NAME = "Resonant Collinearity"
+DATE = "09"
+NAME = "Disk Fragmenter"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")

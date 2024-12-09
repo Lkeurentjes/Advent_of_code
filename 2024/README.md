@@ -26,8 +26,12 @@ Advent of code 2024 solutions in python, using various algorithms.
     - For part 1, check if result can be achieved by sum or multiplications and take sum of total
     - For part 2, add concatenation as option to make true and take sum of total
 - day 8 - Resonant collinearity
-    - For part 1, the number of unique antinodes based on the resonant frequencies of the antennas in grid needs to be found
+    - For part 1, the number of unique antinodes based on the resonant frequencies of the antennas in grid needs to be
+      found
     - For part 2, the number of unique antinodes based on effects of resonant harmonics needs to be found
+- day 9 - Disk fragmenter
+    - For part 1, we need to order the disk as compact as possible and doe a checksum
+    - For part 2, we only need to move when space is big enough
 
 # todo
 
