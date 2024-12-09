@@ -92,3 +92,10 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 19 - Beacons](2021/2021-19-Beacons)
 - [day 20 - Trench map](2021/2021-20-Trench_map)
 - [day 21 - Dirac dice](2021/2021-21-Dirac_Dice)
+
+### 2020
+- [day 1 - report repair](2020/2020-01-Report_Repair)
+- [day 2 - Password philosophy](2020/2020-02-Password_Philosophy)
+- [day 3 - Toboggan Trajectory](2020/2020-03-Toboggan_Trajectory)
+- [day 4 - Passport Processing](2020/2020-04-Passport_Processing)
+- [day 5 - Binary Boarding](2020/2020-05-Binary_Boarding)
