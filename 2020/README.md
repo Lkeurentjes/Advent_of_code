@@ -30,3 +30,18 @@ Advent of code 2020 solutions in python, using various algorithms.
     - For Part 1, Each boarding pass encodes a seat using a binary space partitioning system. Using a recursive
       algorithm, the row and column of each seat are found, and the maximum seat ID is determined.
     - For Part 2, The IDs are sorted, and the missing ID (your seat) is located by identifying the gap in the sequence.
+- Day 6 - Custom Customs
+    - For part 1, the number of unique "yes" answers for each group is calculated by taking the union of all characters
+      in the group's responses, and their total sum is taken as the result.
+    - For part 2, the number of questions where everyone in the group answered "yes" is calculated by taking the
+      intersection of all characters in the group's responses, and their total sum is taken as the result.
+- Day 7 - Handy Haversacks
+    - For part 1, the number of bag types that can eventually contain at least one "shiny gold" bag is calculated by
+      recursively checking if a bag directly or indirectly contains the "shiny gold" bag.
+    - For part 2, the total number of bags required inside a single "shiny gold" bag is calculated by recursively
+      summing the quantities of all nested bags and their contents.
+- Day 8 - Handheld Halting
+    - For part 1, the accumulator value is calculated by executing the boot code until a loop is detected, using a set
+      to track visited instructions.
+    - For part 2, the boot code is fixed by attempting to swap nop and jmp instructions one at a time. The accumulator
+      value is calculated for the first modification that allows the program to terminate successfully.
