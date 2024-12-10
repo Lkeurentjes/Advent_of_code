@@ -1,9 +1,9 @@
 import os
 
 
-YEAR = "2020"
-DATE = "05"
-NAME = "Binary Boarding"
+YEAR = "2024"
+DATE = "10"
+NAME = "Hoof It"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")

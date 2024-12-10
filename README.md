@@ -15,6 +15,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 7 - Bridge repair](2024/2024-07-Bridge_Repair)
 - [day 8 - Resonant collinearity](2024/2024-08-Resonant_Collinearity)
 - [day 9 - Disk fragmenter](2024/2024-09-Disk_Fragmenter)
+- [day 10 - Hoof it](2024/2024-10-Hoof_It)
 
 ### 2023
 - [day 1 - Calibration](2023/2023-01-Calibration)
@@ -94,7 +95,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 21 - Dirac dice](2021/2021-21-Dirac_Dice)
 
 ### 2020
-- [day 1 - report repair](2020/2020-01-Report_Repair)
+- [day 1 - Report repair](2020/2020-01-Report_Repair)
 - [day 2 - Password philosophy](2020/2020-02-Password_Philosophy)
 - [day 3 - Toboggan Trajectory](2020/2020-03-Toboggan_Trajectory)
 - [day 4 - Passport Processing](2020/2020-04-Passport_Processing)
