@@ -37,6 +37,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       breadth-first search (BFS), and their sum is taken as the result.
     - For part 2, the number of distinct hiking trails starting at each 0-height trailhead is counted by propagating
       trail paths through BFS, and their sum is taken as the result.
+- Day 11 - Plutonian pebbles
+    - For part 1, the total number of stones after 25 "blinks" is calculated by applying transformations based on the
+      rules for splitting, multiplying, or replacing stones.
+    - For part 2, the total number of stones after 75 "blinks" is calculated in the same manner, using a Counter instead
+      of transforming the list is needed for efficiency.
 
 # todo
 
