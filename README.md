@@ -21,6 +21,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 9 - Disk fragmenter](2024/2024-09-Disk_Fragmenter)
 - [day 10 - Hoof it](2024/2024-10-Hoof_It)
 - [day 11 - Plutonian pebbles](2024/2024-11-Plutonian_Pebbles)
+- [day 12 - Garden groups](2024/2024-12-Garden_Groups)
 
 ### 2023
 

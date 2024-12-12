@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2024"
-DATE = "11"
-NAME = "Plutonian Pebbles"
+DATE = "12"
+NAME = "Garden Groups"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")
