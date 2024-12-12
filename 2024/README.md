@@ -42,12 +42,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       rules for splitting, multiplying, or replacing stones.
     - For part 2, the total number of stones after 75 "blinks" is calculated in the same manner, using a Counter instead
       of transforming the list is needed for efficiency.
--
-    - Day 12 - Garden Groups
-        - For part 1, walk over the garden grid using BFS to determine connected plots of the same type. Calculate the
-          area and perimeter of each plot, summing the product of these values for all plots.
-        - For part 2, extend the BFS logic to include the calculation of corners (sides) for each plot and sum the
-          product of area and sides for all plots.
+- Day 12 - Garden Groups
+    - For part 1, walk over the garden grid using BFS to determine connected plots of the same type. Calculate the
+      area and perimeter of each plot, summing the product of these values for all plots.
+    - For part 2, extend the BFS logic to include the calculation of corners (sides) for each plot and sum the
+      product of area and sides for all plots.
 
 # todo
 
