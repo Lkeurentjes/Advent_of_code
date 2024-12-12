@@ -1,6 +1,7 @@
 import numpy as np
 from collections import deque
 
+
 class Grid:
     def __init__(self, grid):
         self.grid = np.array(grid)
@@ -49,36 +50,17 @@ class Grid:
         corners = 0
 
         for cell in cells:
-            # Check for external corners
-            u = (cell[0] - 1, cell[1])  # Up
-            d = (cell[0] + 1, cell[1])  # Down
-            r = (cell[0], cell[1] + 1)  # Right
-            l = (cell[0], cell[1] - 1)  # Left
-            if u not in cells and r not in cells:
-                corners += 1
-            if r not in cells and d not in cells:
-                corners += 1
-            if d not in cells and l not in cells:
-                corners += 1
-            if l not in cells and u not in cells:
-                corners += 1
+            for dx, dy in [(1, 1), (-1, 1), (1, -1), (-1, -1)]:
+                # outer corners
+                if ((cell[0] + dx, cell[1]) not in cells and (cell[0], cell[1] + dy) not in cells):
+                    corners += 1
 
-            # Check for internal corners (diagonals)
-            ur = (cell[0] - 1, cell[1] + 1)  # Up-Right (diagonal)
-            ul = (cell[0] - 1, cell[1] - 1)  # Up-Left (diagonal)
-            dr = (cell[0] + 1, cell[1] + 1)  # Down-Right (diagonal)
-            dl = (cell[0] + 1, cell[1] - 1)  # Down-Left (diagonal)
-            if u in cells and r in cells and ur not in cells:
-                corners += 1
-            if r in cells and d in cells and dr not in cells:
-                corners += 1
-            if d in cells and l in cells and dl not in cells:
-                corners += 1
-            if l in cells and u in cells and ul not in cells:
-                corners += 1
+                # inside corners
+                if ((cell[0] + dx, cell[1]) in cells and (cell[0], cell[1] + dy) in cells and
+                        (cell[0] + dx, cell[1] + dy) not in cells):
+                    corners += 1
 
         return corners
-
 
     def calculate_price_area_perimeter(self):
         total_price_perimeter, total_price_sides = 0, 0
@@ -94,10 +76,10 @@ class Grid:
 
         return total_price_perimeter, total_price_sides
 
+
 with open('2024-12-Garden_Groups.txt') as f:
     lines = [list(row) for row in f.read().splitlines()]
     garden = Grid(lines)
     price_perimeter, price_sides = garden.calculate_price_area_perimeter()
     print("Part 1, price when using perimeter", price_perimeter)
     print("Part 2, price when using sides", price_sides)
-
