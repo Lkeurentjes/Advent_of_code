@@ -47,6 +47,12 @@ Advent of code 2024 solutions in python, using various algorithms.
       area and perimeter of each plot, summing the product of these values for all plots.
     - For part 2, extend the BFS logic to include the calculation of corners (sides) for each plot and sum the
       product of area and sides for all plots.
+-
+    - Day 13 - Claw Contraption
+        - For part 1, use a brute force method or Z3 SMT solver to calculate the minimum tokens required to match the
+          target position using two types of moves, subject to constraints on maximum button presses.
+        - For part 2, solve the same problem with an added offset to the target position, efficiently handled by the Z3
+          SMT solver.
 
 # todo
 
