@@ -24,6 +24,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 12 - Garden groups](2024/2024-12-Garden_Groups)
 - [day 13 - claw contraption](2024/2024-13-Claw_Contraption)
 - [day 14 - Restroom redoubt](2024/2024-14-Restroom_Redoubt)
+- [day 15 - Warehouse woes](2024/2024-15-Warehouse_Woes)
 
 ### 2023
 

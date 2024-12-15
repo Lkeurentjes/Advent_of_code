@@ -57,6 +57,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       quadrant. Multiply the counts of robots in all four quadrants for the result.
     - For part 2, identify the first time step when no robots overlap on the grid, and display the resulting pattern
       visually with colors to reveal the "Easter egg".
+- Day 15 - Warehouse Woes
+    - For part 1, simulate a robot pushing boxes on a grid based on directional instructions. Calculate the sum of GPS
+      coordinates for all boxes in their final positions.
+    - For part 2, expand the grid and implement a double-box handling mechanism. Simulate movements and calculate the
+      updated GPS sum for all boxes, including scaled-up representations.
 
 # todo
 
