@@ -62,6 +62,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       coordinates for all boxes in their final positions.
     - For part 2, expand the grid and implement a double-box handling mechanism. Simulate movements and calculate the
       updated GPS sum for all boxes, including scaled-up representations.
+- Day 16 - Reindeer Maze
+    - For part 1, implement Dijkstra's algorithm to find the lowest possible cost to navigate a maze, considering the
+      cost of movement and turning.
+    - For part 2, backtrack through the shortest paths to determine the number of unique tiles visited in the cheapest
+      route, ensuring all possible directions are accounted for.
 
 # todo
 
