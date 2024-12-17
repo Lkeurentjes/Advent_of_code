@@ -67,6 +67,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       cost of movement and turning.
     - For part 2, backtrack through the shortest paths to determine the number of unique tiles visited in the cheapest
       route, ensuring all possible directions are accounted for.
+- Day 17 - Chronospatial Computer
+    - For part 1, simulate a program execution based on opcodes and a set of registers, producing the program's output
+      based on specified rules.
+    - For part 2, identify the smallest possible value of register A that reproduces the program's output through
+      backtracking and testing ranges efficiently.
 
 # todo
 

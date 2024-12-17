@@ -26,6 +26,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 14 - Restroom redoubt](2024/2024-14-Restroom_Redoubt)
 - [day 15 - Warehouse woes](2024/2024-15-Warehouse_Woes)
 - [day 16 - Reindeer Maze](2024/2024-16-Reindeer_Maze)
+- [day 17 - Chronospatial computer](2024/2024-17-Chronospatial_Computer)
 
 ### 2023
 

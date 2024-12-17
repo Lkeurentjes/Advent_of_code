@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2024"
-DATE = "16"
-NAME = "Reindeer Maze"
+DATE = "17"
+NAME = "Chronospatial Computer"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")
