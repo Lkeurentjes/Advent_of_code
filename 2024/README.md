@@ -72,6 +72,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       based on specified rules.
     - For part 2, identify the smallest possible value of register A that reproduces the program's output through
       backtracking and testing ranges efficiently.
+- Day 18 - RAM Run
+    - For part 1, use BFS to determine the minimum steps required to traverse from the start to the exit in a grid. The
+      grid's corruption state impacts traversal.
+    - For part 2, analyze the grid's connected components to identify the point where the path becomes impossible, based
+      on memory corruption patterns.
 
 # todo
 
