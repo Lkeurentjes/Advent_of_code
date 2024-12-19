@@ -2,8 +2,8 @@ import os
 
 
 YEAR = "2024"
-DATE = "18"
-NAME = "RAM Run"
+DATE = "19"
+NAME = "Linen Layout"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")

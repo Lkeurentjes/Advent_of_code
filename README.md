@@ -28,6 +28,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 16 - Reindeer Maze](2024/2024-16-Reindeer_Maze)
 - [day 17 - Chronospatial computer](2024/2024-17-Chronospatial_Computer)
 - [day 18 - RAM run](2024/2024-18-RAM_Run)
+- [day 19 - Linen layout](2024/2024-19-Linen_Layout)
 
 ### 2023
 

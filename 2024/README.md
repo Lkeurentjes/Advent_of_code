@@ -74,9 +74,13 @@ Advent of code 2024 solutions in python, using various algorithms.
       backtracking and testing ranges efficiently.
 - Day 18 - RAM Run
     - For part 1, use BFS to determine the minimum steps required to traverse from the start to the exit in a grid. The
-      grid's corruption state impacts traversal.
+      grid's corruption state impacts' traversal.
     - For part 2, analyze the grid's connected components to identify the point where the path becomes impossible, based
       on memory corruption patterns.
+- Day 19 - Linen Layout
+    - For part 1, count the number of designs that can be fully constructed using a set of towel patterns.
+    - For part 2, calculate the total number of arrangements possible for each design, using recursive memoization to
+      efficiently compute all valid combinations.
 
 # todo
 
