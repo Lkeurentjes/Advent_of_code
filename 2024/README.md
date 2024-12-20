@@ -81,6 +81,11 @@ Advent of code 2024 solutions in python, using various algorithms.
     - For part 1, count the number of designs that can be fully constructed using a set of towel patterns.
     - For part 2, calculate the total number of arrangements possible for each design, using recursive memoization to
       efficiently compute all valid combinations.
+- Day 20 - Race Condition
+    - For part 1, implement Dijkstra's algorithm to calculate the shortest path from the start to the end of a maze.
+      Identify areas where the maximum difference between adjacent tiles exceeds 100.
+    - For part 2, extend the analysis to include jumps of maximum range 20. Count the occurrences where jumps
+      result in a maximum difference exceeding 100.
 
 # todo
 
