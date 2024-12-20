@@ -38,6 +38,10 @@ class Grid:
                     self.cheapmap[newx, newy] = newsec
                     heapq.heappush(pq, (newsec, (newx, newy)))
 
+        # Save the grid to a text file with consistent spacing
+        # Use a format string for spacing (e.g., "%10.3f" for 10-character wide with 3 decimal places)
+        np.savetxt("grid_output.txt", self.cheapmap, fmt="%5.0f", delimiter=",")
+
     def calculate_cheats(self, min_cheat):
         # Calculate cheats where shortcuts are more than min cheat
         self.dijkstra()
