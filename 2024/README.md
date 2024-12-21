@@ -86,6 +86,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       Identify areas where the maximum difference between adjacent tiles exceeds 100.
     - For part 2, extend the analysis to include jumps of maximum range 20. Count the occurrences where jumps
       result in a maximum difference exceeding 100.
+- Day 21 - Keypad Conundrum
+    - For part 1, determine all possible paths through a numeric keypad, ensuring that movements do not cross invalid
+      gaps. Calculate the total complexity for given codes based on these constraints.
+    - For part 2, extend the complexity calculations to include additional keypads with directional controls. Analyze
+      the total complexity using multiple robots to navigate both keypads.
 
 # todo
 
