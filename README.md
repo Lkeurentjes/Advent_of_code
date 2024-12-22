@@ -31,6 +31,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 19 - Linen layout](2024/2024-19-Linen_Layout)
 - [day 20 - Race conditions](2024/2024-20-Race_Condition)
 - [day 21 - Keypad conundrum](2024/2024-21-Keypad_Conundrum)
+- [day 22 - Monkey market](2024/2024-22-Monkey_Market)
 
 ### 2023
 

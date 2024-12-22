@@ -91,6 +91,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       gaps. Calculate the total complexity for given codes based on these constraints.
     - For part 2, extend the complexity calculations to include additional keypads with directional controls. Analyze
       the total complexity using multiple robots to navigate both keypads.
+- Day 22 - Monkey Market
+    - For part 1, simulate a sequence of transformations on secrets using bitwise and modular operations to generate
+      final values. Sum these values for a given number of iterations.
+    - For part 2, analyze price changes and find the most profitable sequence of consecutive changes. Identify the best
+      sequence to sell based on a scoring system using patterns in price changes.
 
 # todo
 
