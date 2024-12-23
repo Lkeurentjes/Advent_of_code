@@ -96,6 +96,11 @@ Advent of code 2024 solutions in python, using various algorithms.
       final values. Sum these values for a given number of iterations.
     - For part 2, analyze price changes and find the most profitable sequence of consecutive changes. Identify the best
       sequence to sell based on a scoring system using patterns in price changes.
+- Day 23 - LAN Party
+    - For part 1, identify fully connected triplets of nodes in a network graph. Filter these triplets based on a given
+      prefix and count their occurrences.
+    - For part 2, find the largest clique in the network graph using the Bron–Kerbosch algorithm. Generate a password
+      based on the sorted nodes in this largest clique.
 
 # todo
 

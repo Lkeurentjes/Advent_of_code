@@ -32,6 +32,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 20 - Race conditions](2024/2024-20-Race_Condition)
 - [day 21 - Keypad conundrum](2024/2024-21-Keypad_Conundrum)
 - [day 22 - Monkey market](2024/2024-22-Monkey_Market)
+- [day 23 - Lan Party](2024/2024-23-LAN_Party)
 
 ### 2023
 
