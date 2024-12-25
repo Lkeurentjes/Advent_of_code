@@ -101,6 +101,9 @@ Advent of code 2024 solutions in python, using various algorithms.
       prefix and count their occurrences.
     - For part 2, find the largest clique in the network graph using the Bron–Kerbosch algorithm. Generate a password
       based on the sorted nodes in this largest clique.
+- Day 24 Crossed wires
+- Day 25 Code Chronicle
+    - For part 1, identify keys and locks from grids and find which do not overlap
 
 # todo
 

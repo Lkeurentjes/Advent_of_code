@@ -33,6 +33,8 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 21 - Keypad conundrum](2024/2024-21-Keypad_Conundrum)
 - [day 22 - Monkey market](2024/2024-22-Monkey_Market)
 - [day 23 - Lan Party](2024/2024-23-LAN_Party)
+- [day 24 - Crossed wires](2024/2024-24-Crossed_Wires)
+- [day 25 - Code Chronicle](2024/2024-25-Code_Chronicle)
 
 ### 2023
 

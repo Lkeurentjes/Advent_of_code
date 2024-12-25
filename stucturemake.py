@@ -3,7 +3,7 @@ import os
 
 YEAR = "2024"
 DATE = "25"
-NAME = ""
+NAME = "Code Chronicle"
 
 
 combinationname = YEAR + "-" + DATE + "-" + NAME.replace(" ", "_")
