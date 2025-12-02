@@ -8,6 +8,11 @@ In the Readme of every year there is some explanation of what is done and if the
 
 The codes are now always in python, seeing that was my best language when I started advent of code.
 
+### 2025
+
+- [day 1 - Secret entrance](2025/2025-01-SecretEntrence)
+- [day 2 - Gift shop](2025/2025-02-GiftShop)
+
 ### 2024
 
 - [day 1 - Historian hysteria](2024/2024-01-Historian-Hysteria)
