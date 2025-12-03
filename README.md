@@ -12,6 +12,7 @@ The codes are now always in python, seeing that was my best language when I star
 
 - [day 1 - Secret entrance](2025/2025-01-SecretEntrence)
 - [day 2 - Gift shop](2025/2025-02-GiftShop)
+- [day 3 - Lobby](2025/2025-03-Lobby)
 
 ### 2024
 
