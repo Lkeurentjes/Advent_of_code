@@ -15,6 +15,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 3 - Lobby](2025/2025-03-Lobby)
 - [day 4 - Printing department](2025/2025-04-PrintingDepartment)
 - [day 5 - Cafetaria](2025/2025-05-Cafetaria)
+- [day 6 - Thrash Compactor](2025/2025-06-TrashCompactor)
 
 ### 2024
 
