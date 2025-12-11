@@ -20,6 +20,7 @@ The codes are now always in python, seeing that was my best language when I star
 - [day 8 - Playground](2025/2025-08-Playground)
 - [day 9 - Movie Theater](2025/2025-09-MovieTheater)
 - [day 10 - Factory](2025/2025-10-Factory)
+- [day 11 - Reactor](2025/2025-11-Reactor)
 
 ### 2024
 
