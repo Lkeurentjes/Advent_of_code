@@ -51,16 +51,6 @@ class Graph:
         return total
 
     @lru_cache(maxsize=None)
-    def recursive_path_counter(self, pos, end):
-        if pos == end:
-            return 1
-
-        total = 0
-        for nxt in self.nodes[pos]:
-            total += self.recursive_path_counter(nxt, end)
-        return total
-
-    @lru_cache(maxsize=None)
     def recursive_path_counter_visit(self, pos, end, visited_dac=False, visited_fft=None):
         if pos == end:
             if visited_dac and visited_fft:
